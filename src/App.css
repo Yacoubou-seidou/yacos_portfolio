@@ -1,0 +1,17 @@
+#root {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #eee;
+  font-family: poppins, Helvetica, sans-serif;
+  font-weight: 600;
+}

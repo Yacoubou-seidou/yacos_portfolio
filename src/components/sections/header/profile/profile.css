@@ -1,0 +1,84 @@
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 65px 45px 30px;
+  min-height: 100%;
+  background-color: #444444;
+}
+
+.header-titles {
+  height: 100px;
+}
+
+.header-titles h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #eee;
+  margin: 5px 0 7px;
+  line-height: 1.2em;
+}
+
+.header-titles h4,
+.copyrights {
+  color: #bbb;
+}
+
+.header-titles h4 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 5px 0;
+  line-height: 1.2em;
+}
+
+.header-photo {
+  width: 180px;
+  margin: 0 auto;
+  z-index: 1
+}
+
+
+.header-photo img {
+  max-width: 100%;
+  background-color: #fff;
+  border: 3px solid #fff;
+  border-radius: 300px
+}
+
+.header-buttons a {
+  background-color: transparent;
+  color: #F5F5F5 !important;
+  border-color: #f5f5f5;
+}
+
+.header-buttons a:hover {
+  background-color: #fff;
+  color: #04b4e0 !important;
+  border-color: #fff
+}
+
+.header-buttons a {
+  padding: .8em 2.1em;
+  margin-bottom: .75em;
+  margin-right: .25em;
+  font-size: 1em;
+  line-height: 1.2;
+  border: 0;
+  outline: 0;
+  border: 2px solid;
+  color: #f5f5f5;
+  text-shadow: none;
+  border-radius: 30px;
+  font-family: poppins, Helvetica, sans-serif;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, .3)
+}
+
+.copyrights {
+  position: absolute;
+  bottom: 0;
+}
