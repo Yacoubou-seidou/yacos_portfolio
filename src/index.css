@@ -8,8 +8,8 @@ body {
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
-  font-size: 15px;
-  font-family: poppins, Helvetica, sans-serif;
+  font-size: 15px !important;
+  font-family: poppins, Helvetica, sans-serif !important;
   line-height: 1.65em;
   overflow: hidden;
   color: #d5d5d5;
@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #eee;
-  font-family: poppins, Helvetica, sans-serif;
-  font-weight: 600
+  color: #eee !important;
+  font-family: poppins, Helvetica, sans-serif !important;
+  font-weight: 600 !important
 }

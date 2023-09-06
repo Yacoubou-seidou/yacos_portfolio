@@ -1,5 +1,9 @@
 import './main.css'
 import { animationsArray } from '../../../data/animations';
+import StorefrontIcon from '@mui/icons-material/Storefront';
+import DevicesIcon from '@mui/icons-material/Devices';
+import DnsIcon from '@mui/icons-material/Dns';
+import AssignmentIcon from '@mui/icons-material/Assignment';
 const About = () => {
   const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
   return (
@@ -11,10 +15,7 @@ const About = () => {
       <div className="section-content">
         <div className="row">
           <div className="col-xs-12 col-sm-7">
-            <p>Proin volutpat mauris ac pellentesque pharetra. Suspendisse congue elit vel odio suscipit, sit amet
-              tempor nisl imperdiet. Quisque ex justo, faucibus ut mi in, condimentum finibus dolor. Aliquam vitae
-              hendrerit dolor, eget imperdiet mauris. Maecenas et ante id ipsum condimentum dictum et vel massa.
-              Ut in imperdiet dolor, vel consectetur dui.</p>
+            <p>Hi, my name is Yacoubou Seidou, also known as Yacos. I am a web developer from Niger, with a strong foundation in MERN stack web development learned at Codeloccol and Ruby on Rails learned at Micorverse. I am passionate about creating robust, user-friendly web applications with more than 3 years of experience. I Work on many projects built with MERN and Ruby on Rails stacks.</p>
           </div>
 
           <div className="col-xs-12 col-sm-5">
@@ -22,23 +23,22 @@ const About = () => {
               <ul>
                 <li>
                   <span className="title">Age</span>
-                  <span className="value">32</span>
+                  <span className="value">30</span>
                 </li>
 
                 <li>
                   <span className="title">Residence</span>
-                  <span className="value">USA</span>
+                  <span className="value">Niger</span>
                 </li>
 
                 <li>
                   <span className="title">Address</span>
-                  <span className="value">88 Some Street, Some Town</span>
+                  <span className="value">Niamey, Sadoré</span>
                 </li>
 
                 <li>
                   <span className="title">e-mail</span>
-                  <span className="value"><a href="/cdn-cgi/l/email-protection" className="__cf_email__"
-                    data-cfemail="5d38303c34311d38253c302d3138733e3230">[email&#160;protected]</a></span>
+                  <span className="value">yacoseidou@gmail.com</span>
                 </li>
 
                 <li>
@@ -65,7 +65,7 @@ const About = () => {
               <div className="info-list-w-icon">
                 <div className="info-block-w-icon">
                   <div className="ci-icon">
-                    <i className="lnr lnr-store"></i>
+                    <StorefrontIcon sx={{ fontSize: 42 }} className='doIcons' />
                   </div>
                   <div className="ci-text">
                     <h4>Ecommerce</h4>
@@ -75,10 +75,10 @@ const About = () => {
                 </div>
                 <div className="info-block-w-icon">
                   <div className="ci-icon">
-                    <i className="lnr lnr-laptop-phone"></i>
+                    <DevicesIcon sx={{ fontSize: 42 }} className='doIcons' />
                   </div>
                   <div className="ci-text">
-                    <h4>Web Design</h4>
+                    <h4>Front-end Developement</h4>
                     <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit
                       amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
                   </div>
@@ -92,20 +92,20 @@ const About = () => {
               <div className="info-list-w-icon">
                 <div className="info-block-w-icon">
                   <div className="ci-icon">
-                    <i className="lnr lnr-pencil"></i>
+                    <DnsIcon sx={{ fontSize: 42 }} className='doIcons' />
                   </div>
                   <div className="ci-text">
-                    <h4>Copywriting</h4>
+                    <h4>Back-end Developement</h4>
                     <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit
                       amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
                   </div>
                 </div>
                 <div className="info-block-w-icon">
                   <div className="ci-icon">
-                    <i className="lnr lnr-flag"></i>
+                    <AssignmentIcon sx={{ fontSize: 42 }} className='doIcons' />
                   </div>
                   <div className="ci-text">
-                    <h4>Management</h4>
+                    <h4>Project Management</h4>
                     <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit
                       amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
                   </div>

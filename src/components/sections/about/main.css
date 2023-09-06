@@ -1,3 +1,42 @@
 .section-content {
   text-align: left;
 }
+
+.doIcons {
+  position: relative;
+  color: #04b4e0;
+  opacity: .7;
+  margin-bottom: 10px;
+}
+
+.info-block-w-icon .ci-icon {
+  display: table-cell;
+  width: 54px;
+  padding-right: 25px;
+  margin-bottom: 10px;
+}
+
+.info-block-w-icon .ci-text h4 {
+  margin: 5px 0;
+}
+
+.info-block-w-icon {
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-size: 18px !important;
+}
+
+
+.testimonial .author-info .company {
+  color: #a5a6a7 !important;
+  font-size: 13px !important;
+  font-weight: 300 !important;
+  margin: 0 !important;
+}
+
+.testimonial .author-info .author {
+  margin: 0 !important;
+  font-size: 15px !important;
+}
