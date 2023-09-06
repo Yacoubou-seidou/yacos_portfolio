@@ -1,8 +1,8 @@
-import React from 'react'
-
+import { animationsArray } from '../../../data/animations';
 const Portfolio = () => {
+  const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
   return (
-    <section data-id="portfolio" className="animated-section">
+    <section data-id="portfolio" className={`animated-section ${result}`}>
       <div className="page-title">
         <h2>Portfolio</h2>
       </div>

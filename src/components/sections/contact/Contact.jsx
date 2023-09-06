@@ -1,8 +1,9 @@
-import React from 'react'
 
+import { animationsArray } from '../../../data/animations';
 const Contact = () => {
+  const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
   return (
-    <section data-id="contact" className="animated-section">
+    <section data-id="contact" className={`animated-section ${result}`}>
       <div className="page-title">
         <h2>Contact</h2>
       </div>
@@ -46,8 +47,8 @@ const Contact = () => {
           <div className="col-xs-12 col-sm-8">
             <div id="map" className="map">
               <div className="lmpixels-map">
-                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                  src="https://maps.google.com/maps?q=San%20Francisco%2C%20S601%20Townsend%20Street%2C%20California%2C%20USA&amp;amp;t=m&amp;amp;z=16&amp;amp;output=embed&amp;amp;iwloc=near&amp;output=embed"></iframe>
+                {/* <iframe scrolling="no" marginheight="0" marginwidth="0"
+                  src="https://maps.google.com/maps?q=San%20Francisco%2C%20S601%20Townsend%20Street%2C%20California%2C%20USA&amp;amp;t=m&amp;amp;z=16&amp;amp;output=embed&amp;amp;iwloc=near&amp;output=embed"></iframe> */}
               </div>
             </div>
             <div className="block-title">

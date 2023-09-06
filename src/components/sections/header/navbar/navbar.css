@@ -43,5 +43,13 @@ ul.main-menu a:hover .link-text {
 }
 
 ul.main-menu li:hover .menu-icon {
-  color: aqua;
+  color: #04b4e0;
+}
+
+.main-menu .active {
+  color: #04b4e0;
+}
+
+.main-menu .active .link-text {
+  visibility: visible;
 }

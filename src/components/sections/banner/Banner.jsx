@@ -2,7 +2,10 @@ import './banner.css'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { animationsArray } from '../../../data/animations';
 const Banner = () => {
+  const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
+
   const messages = ['Backend-developer', 'Frontend-developer']
   const settings = {
     dots: true,
@@ -18,7 +21,7 @@ const Banner = () => {
     className: 'slidderText',
   };
   return (
-    <div className="section-content vcentered">
+    <div className={`section-content vcentered animated-section ${result}`}>
       <div className="row">
         <div className="col-sm-12 col-md-12 col-lg-12">
           <div className="title-block">
