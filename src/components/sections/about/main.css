@@ -1,19 +1,1 @@
-.page-title {
-  display: inline-block;
-  padding-right: 25px;
-  padding-bottom: 15px;
-  margin-bottom: 30px
-}
 
-.page-title h2 {
-  font-size: 32px;
-  z-index: 1
-}
-
-.page-title h2 span {
-  color: #04b4e0
-}
-
-#about-me {
-  color: aliceblue !important;
-}

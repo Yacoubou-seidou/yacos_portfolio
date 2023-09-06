@@ -1,6 +1,18 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #eee;
+  font-family: poppins, Helvetica, sans-serif;
+  font-weight: 600
+}
+
 .animated-section {
   background-color: #222;
   height: 100%;
+  color: #eee;
   width: 100%;
   padding: 50px;
   opacity: 1;
