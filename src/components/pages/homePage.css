@@ -2,10 +2,7 @@
   background-color: #222;
   height: 100%;
   width: 100%;
-  padding: 60px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  padding: 50px;
   opacity: 1;
   overflow-x: hidden;
   -webkit-transform: translate3d(0, 0, 0);
