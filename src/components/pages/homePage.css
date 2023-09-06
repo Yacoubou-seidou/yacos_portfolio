@@ -23,7 +23,11 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   background-position: 50% 50%;
-  background-size: cover
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: start;
 }
 
 .start-page {
@@ -72,13 +76,14 @@ h6 {
   position: relative;
   padding-right: 25px;
   padding-bottom: 15px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .page-title h2 {
   position: relative;
   font-size: 32px;
-  z-index: 1
+  z-index: 1;
+  width: 100%;
 }
 
 .page-title h2 span {
