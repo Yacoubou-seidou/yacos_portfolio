@@ -22,22 +22,21 @@ const Banner = () => {
   };
   return (
     <div className={`section-content vcentered animated-section ${result}`}>
-      <div className="row">
-        <div className="col-sm-12 col-md-12 col-lg-12">
-          <div className="title-block">
-            <h2>Yacoubou Seidou</h2>
-            <div className="col-12">
-              <Slider {...settings}>
-                {messages.map((message, index) => (
-                  <div key={message + index} className="item">
-                    <div className="sp-subtitle">{message}</div>
-                  </div>
-                ))}
-              </Slider>
-            </div>
+      <div className="col-sm-12 col-md-12 col-lg-12">
+        <div className="title-block">
+          <h2>Yacoubou Seidou</h2>
+          <div className="col-12">
+            <Slider {...settings}>
+              {messages.map((message, index) => (
+                <div key={message + index} className="item">
+                  <div className="sp-subtitle">{message}</div>
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
       </div>
+
 
     </div>
   )

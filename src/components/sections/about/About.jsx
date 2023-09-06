@@ -1,8 +1,9 @@
+import './main.css'
 import { animationsArray } from '../../../data/animations';
 const About = () => {
   const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
   return (
-    <section data-id="about-me" className={`animated-section ${result}`}>
+    <section id="about-me" className={`animated-section ${result}`}>
       <div className="page-title">
         <h2>About <span>Me</span></h2>
       </div>
