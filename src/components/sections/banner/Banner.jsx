@@ -15,7 +15,7 @@ const Banner = () => {
     autoplay: true,
     speed: 2000,
     centerMode: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
     fade: true,
     arrows: false,
     className: 'slidderText',

@@ -1,4 +1,4 @@
-
+import './contact.css'
 import { animationsArray } from '../../../data/animations';
 const Contact = () => {
   const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
@@ -47,8 +47,8 @@ const Contact = () => {
           <div className="col-xs-12 col-sm-8">
             <div id="map" className="map">
               <div className="lmpixels-map">
-                {/* <iframe scrolling="no" marginheight="0" marginwidth="0"
-                  src="https://maps.google.com/maps?q=San%20Francisco%2C%20S601%20Townsend%20Street%2C%20California%2C%20USA&amp;amp;t=m&amp;amp;z=16&amp;amp;output=embed&amp;amp;iwloc=near&amp;output=embed"></iframe> */}
+                <iframe scrolling="no" marginHeight="0" marginWidth="0"
+                  src="https://maps.google.com/maps?q=San%20Francisco%2C%20S601%20Townsend%20Street%2C%20California%2C%20USA&amp;amp;t=m&amp;amp;z=16&amp;amp;output=embed&amp;amp;iwloc=near&amp;output=embed"></iframe>
               </div>
             </div>
             <div className="block-title">
@@ -60,8 +60,8 @@ const Contact = () => {
               <div className="messages"></div>
 
               <div className="controls two-columns">
-                <div className="fields clearfix">
-                  <div className="left-column">
+                <div className="fields clearfix contact_element">
+                  <div className="left-column col-5">
                     <div className="form-group form-group-with-icon">
                       <input id="form_name" type="text" name="name" className="form-control" placeholder=""
                         required="required" data-error="Name is required." />
@@ -86,9 +86,9 @@ const Contact = () => {
                       <div className="help-block with-errors"></div>
                     </div>
                   </div>
-                  <div className="right-column">
+                  <div className="right-column col-6">
                     <div className="form-group form-group-with-icon">
-                      <textarea id="form_message" name="message" className="form-control" placeholder="" rows="7"
+                      <textarea id="form_message" name="message" className="form-control col-12" placeholder="" rows="7"
                         required="required" data-error="Please, leave me a message."></textarea>
                       <label>Message</label>
                       <div className="form-control-border"></div>
@@ -96,9 +96,6 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-
-                <div className="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"
-                  data-theme="dark"></div>
 
                 <input type="submit" className="button btn-send" value="Send message" />
               </div>
