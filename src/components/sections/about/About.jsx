@@ -1,10 +1,48 @@
 import './main.css'
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { testimonials } from '../../../data/testimonials';
 import { animationsArray } from '../../../data/animations';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import DevicesIcon from '@mui/icons-material/Devices';
 import DnsIcon from '@mui/icons-material/Dns';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 const About = () => {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    centerMode: true,
+    speed: 2000,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
   return (
     <section id="about-me" className={`animated-section ${result}`}>
@@ -125,62 +163,27 @@ const About = () => {
 
         <div className="row">
           <div className="col-xs-12 col-sm-12">
-            <div className="testimonials owl-carousel">
-              <div className="testimonial">
-                <div className="img">
-                  <img src="img/testimonials/testimonial-1.jpg" alt="Alex Smith" />
-                </div>
-                <div className="text">
-                  <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc
-                    sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui
-                    ultrices.</p>
-                </div>
+            <div className="testimonials row col-12 d-flex">
+              <Slider {...settings}>
+                {testimonials.map((testimonial, index) => (
+                  <div className="testimonial col-12" key={testimonial + index}>
+                    <div className="img">
+                      <img src={testimonial.image} alt={testimonial.author} />
+                    </div>
+                    <div className="text">
+                      <p>{testimonial.text}</p>
+                    </div>
 
-                <div className="author-info">
-                  <h4 className="author">Julia Hickman</h4>
-                  <h5 className="company">Omni Source</h5>
-                  <div className="icon">
-                    <i className="fas fa-quote-right"></i>
+                    <div className="author-info">
+                      <h4 className="author">{testimonial.author}</h4>
+                      <h5 className="company">{testimonial.company}</h5>
+                      <div className="icon">
+                        <FormatQuoteIcon sx={{ fontSize: 42 }} className='quoteIcon' />
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="testimonial">
-                <div className="img">
-                  <img src="img/testimonials/testimonial-2.jpg" alt="Alex Smith" />
-                </div>
-                <div className="text">
-                  <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc
-                    sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui
-                    ultrices.</p>
-                </div>
-
-                <div className="author-info">
-                  <h4 className="author">Robert Watkins</h4>
-                  <h5 className="company">Endicott Shoes</h5>
-                  <div className="icon">
-                    <i className="fas fa-quote-right"></i>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial">
-                <div className="img">
-                  <img src="img/testimonials/testimonial-3.jpg" alt="Alex Smith" />
-                </div>
-                <div className="text">
-                  <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc
-                    sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui
-                    ultrices.</p>
-                </div>
-
-                <div className="author-info">
-                  <h4 className="author">Kristin Carroll</h4>
-                  <h5 className="company">Helping Hand</h5>
-                  <div className="icon">
-                    <i className="fas fa-quote-right"></i>
-                  </div>
-                </div>
-              </div>
-
+                ))}
+              </Slider>
             </div>
           </div>
         </div>
