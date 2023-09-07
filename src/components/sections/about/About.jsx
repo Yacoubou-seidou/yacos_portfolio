@@ -7,6 +7,9 @@ import DevicesIcon from '@mui/icons-material/Devices';
 import DnsIcon from '@mui/icons-material/Dns';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import WorkIcon from '@mui/icons-material/Work';
+import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+import FolderZipIcon from '@mui/icons-material/FolderZip';
 const About = () => {
 
   const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
@@ -159,130 +162,6 @@ const About = () => {
           </div>
         </div>
 
-
-        <div className="white-space-50"></div>
-
-        <div className="row">
-          <div className="col-xs-12 col-sm-12">
-            <div className="block-title">
-              <h3>Cilents</h3>
-            </div>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col-xs-12 col-sm-12">
-            <div className="clients owl-carousel">
-
-              <div className="client-block">
-                <a href="#" target="_blank" title="Logo">
-                  <img src="img/clients/client-1.png" alt="Logo" />
-                </a>
-              </div>
-
-              <div className="client-block">
-                <a href="#" target="_blank" title="Logo">
-                  <img src="img/clients/client-2.png" alt="Logo" />
-                </a>
-              </div>
-
-              <div className="client-block">
-                <a href="#" target="_blank" title="Logo">
-                  <img src="img/clients/client-3.png" alt="Logo" />
-                </a>
-              </div>
-
-              <div className="client-block">
-                <a href="#" target="_blank" title="Logo">
-                  <img src="img/clients/client-4.png" alt="Logo" />
-                </a>
-              </div>
-
-              <div className="client-block">
-                <a href="#" target="_blank" title="Logo">
-                  <img src="img/clients/client-5.png" alt="Logo" />
-                </a>
-              </div>
-
-              <div className="client-block">
-                <a href="#" target="_blank" title="Logo">
-                  <img src="img/clients/client-6.png" alt="Logo" />
-                </a>
-              </div>
-
-              <div className="client-block">
-                <a href="#" target="_blank" title="Logo">
-                  <img src="img/clients/client-7.png" alt="Logo" />
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div className="white-space-50"></div>
-
-        <div className="row">
-          <div className="col-xs-12 col-sm-12">
-
-            <div className="block-title">
-              <h3>Pricing</h3>
-            </div>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className=" col-xs-12 col-sm-12 ">
-            <div className="fw-pricing clearfix row">
-
-              <div className="fw-package-wrap col-md-6 ">
-                <div className="fw-package">
-                  <div className="fw-heading-row">
-                    <span>Silver</span>
-                  </div>
-
-                  <div className="fw-pricing-row">
-                    <span>$64</span>
-                    <small>per month</small>
-                  </div>
-
-                  <div className="fw-button-row">
-                    <a href="#" target="_self" className="btn btn-secondary">Free Trial</a>
-                  </div>
-
-                  <div className="fw-default-row">Lorem ipsum dolor</div>
-                  <div className="fw-default-row">Pellentesque scelerisque</div>
-                  <div className="fw-default-row">Morbi eu sagittis</div>
-                </div>
-              </div>
-
-              <div className="fw-package-wrap col-md-6 highlight-col ">
-                <div className="fw-package">
-                  <div className="fw-heading-row">
-                    <span>Gold</span>
-                  </div>
-
-                  <div className="fw-pricing-row">
-                    <span>$128</span>
-                    <small>per month</small>
-                  </div>
-
-                  <div className="fw-button-row">
-                    <a href="#" target="_self" className="btn btn-primary">Free Trial</a>
-                  </div>
-
-                  <div className="fw-default-row">Lorem ipsum dolor</div>
-                  <div className="fw-default-row">Pellentesque scelerisque</div>
-                  <div className="fw-default-row">Morbi eu sagittis</div>
-                  <div className="fw-default-row">Donec non diam</div>
-                  <div className="fw-default-row"></div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
         <div className="white-space-50"></div>
 
         <div className="row">
@@ -297,27 +176,27 @@ const About = () => {
         <div className="row">
           <div className="col-xs-12 col-sm-4">
             <div className="fun-fact gray-default">
-              <i className="lnr lnr-heart"></i>
-              <h4>Happy Clients</h4>
-              <span className="fun-fact-block-value">578</span>
+              <WorkIcon sx={{ fontSize: 35 }} className="lnr lnr-heart" />
+              <h4>Projects</h4>
+              <span className="fun-fact-block-value">100+</span>
               <span className="fun-fact-block-text"></span>
             </div>
           </div>
 
           <div className="col-xs-12 col-sm-4">
             <div className="fun-fact gray-default">
-              <i className="lnr lnr-clock"></i>
+              <AccessAlarmIcon sx={{ fontSize: 35 }} className="lnr lnr-clock" />
               <h4>Working Hours</h4>
-              <span className="fun-fact-block-value">4,780</span>
+              <span className="fun-fact-block-value">4,200+</span>
               <span className="fun-fact-block-text"></span>
             </div>
           </div>
 
           <div className="col-xs-12 col-sm-4 ">
             <div className="fun-fact gray-default">
-              <i className="lnr lnr-star"></i>
-              <h4>Awards Won</h4>
-              <span className="fun-fact-block-value">15</span>
+              <FolderZipIcon sx={{ fontSize: 35 }} className="lnr lnr-heart" />
+              <h4>Packages</h4>
+              <span className="fun-fact-block-value">4</span>
               <span className="fun-fact-block-text"></span>
             </div>
           </div>
