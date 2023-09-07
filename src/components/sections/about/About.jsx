@@ -15,7 +15,7 @@ const About = () => {
     dots: true,
     infinite: true,
     arrows: false,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     centerMode: true,
@@ -163,10 +163,10 @@ const About = () => {
 
         <div className="row">
           <div className="col-xs-12 col-sm-12">
-            <div className="testimonials row col-12 d-flex">
+            <div className="testimonials row">
               <Slider {...settings}>
                 {testimonials.map((testimonial, index) => (
-                  <div className="testimonial col-12" key={testimonial + index}>
+                  <div className="testimonial" key={testimonial + index}>
                     <div className="img">
                       <img src={testimonial.image} alt={testimonial.author} />
                     </div>

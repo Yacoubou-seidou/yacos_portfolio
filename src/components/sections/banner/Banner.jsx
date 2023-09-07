@@ -6,9 +6,9 @@ import { animationsArray } from '../../../data/animations';
 const Banner = () => {
   const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
 
-  const messages = ['Backend-developer', 'Frontend-developer']
+  const messages = ['Back-end Developer', 'Front-end Developer']
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,

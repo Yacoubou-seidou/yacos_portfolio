@@ -1,5 +1,5 @@
 .title-block .sp-subtitle {
-  color: #aaa;
+  color: #aaa !important;
   font-size: 21px;
   font-weight: 300;
   margin: 5px 0;
@@ -15,15 +15,15 @@
 }
 
 .item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !;
+  text-align: center !important;
+  width: 100% !important;
 }
 
 .slidderText {
-  width: 100%;
+  width: 100% !important;
 }
 
 .vcentered {

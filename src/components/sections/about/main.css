@@ -36,14 +36,12 @@ h4 {
   box-shadow: 0 10px 10px -8px rgba(0, 0, 0, .22) !important;
 }
 
-/* .resizing {
-  width: 20vw;
-} */
 .testimonials {
-  width: 80vw !important;
-  /* width: 100% !important; */
+  width: 800px !important;
   margin-top: 80px !important;
-  /* min-height: 335px; */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .testimonial {
@@ -87,11 +85,21 @@ h4 {
   margin: 0 !important
 }
 
-.slick-slide {
+.testimonials .slick-slide {
   margin-right: 25px;
 }
 
-.slick-slider {
-  width: 100% !important;
-  height: auto !important;
+.testimonials .slick-track {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.testimonials .slick-dots li button:before {
+  color: #444 !important;
+}
+
+.testimonials .slick-active li button:before {
+  color: #04b4e0 !important;
 }
