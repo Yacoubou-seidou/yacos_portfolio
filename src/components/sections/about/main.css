@@ -37,8 +37,7 @@ h4 {
 }
 
 .testimonials {
-  width: 800px !important;
-  margin-top: 80px !important;
+  /* width: 800px !important; */
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -50,6 +49,7 @@ h4 {
   border-radius: 20px;
   margin: 45px 15px 10px;
   padding: 0 25px 15px;
+  height: 200px;
 }
 
 .testimonial .text {
@@ -85,21 +85,6 @@ h4 {
   margin: 0 !important
 }
 
-.testimonials .slick-slide {
-  margin-right: 25px;
-}
-
-.testimonials .slick-track {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
-
-.testimonials .slick-dots li button:before {
-  color: #444 !important;
-}
-
-.testimonials .slick-active li button:before {
-  color: #04b4e0 !important;
+.carousel-inner {
+  margin: 0 auto;
 }

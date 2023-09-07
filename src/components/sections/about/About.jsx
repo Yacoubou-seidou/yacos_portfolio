@@ -1,7 +1,5 @@
 import './main.css'
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Carousel from 'react-bootstrap/Carousel';
 import { testimonials } from '../../../data/testimonials';
 import { animationsArray } from '../../../data/animations';
 import StorefrontIcon from '@mui/icons-material/Storefront';
@@ -11,38 +9,6 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 const About = () => {
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    arrows: false,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    centerMode: true,
-    speed: 2000,
-    autoplaySpeed: 4000,
-    cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
   const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
   return (
     <section id="about-me" className={`animated-section ${result}`}>
@@ -164,26 +130,31 @@ const About = () => {
         <div className="row">
           <div className="col-xs-12 col-sm-12">
             <div className="testimonials row">
-              <Slider {...settings}>
+              <Carousel controls={false} pause='hover'>
                 {testimonials.map((testimonial, index) => (
-                  <div className="testimonial" key={testimonial + index}>
-                    <div className="img">
-                      <img src={testimonial.image} alt={testimonial.author} />
-                    </div>
-                    <div className="text">
-                      <p>{testimonial.text}</p>
-                    </div>
+                  <Carousel.Item key={testimonial + index} >
 
-                    <div className="author-info">
-                      <h4 className="author">{testimonial.author}</h4>
-                      <h5 className="company">{testimonial.company}</h5>
-                      <div className="icon">
-                        <FormatQuoteIcon sx={{ fontSize: 42 }} className='quoteIcon' />
+                    <div className="testimonial">
+                      <div className="img">
+                        <img src={testimonial.image} alt={testimonial.author} />
                       </div>
+                      <Carousel.Caption>
+                        <div className="text">
+                          <p>{testimonial.text}</p>
+                        </div>
+
+                        <div className="author-info">
+                          <h4 className="author">{testimonial.author}</h4>
+                          <h5 className="company">{testimonial.company}</h5>
+                          <div className="icon">
+                            <FormatQuoteIcon sx={{ fontSize: 42 }} className='quoteIcon' />
+                          </div>
+                        </div>
+                      </Carousel.Caption>
                     </div>
-                  </div>
+                  </Carousel.Item>
                 ))}
-              </Slider>
+              </Carousel>
             </div>
           </div>
         </div>
