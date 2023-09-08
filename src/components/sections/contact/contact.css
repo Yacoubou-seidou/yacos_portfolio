@@ -5,7 +5,7 @@
   display: block;
   margin: 0 0 15px;
   background-color: #333;
-  padding: 20px 10px;
+  padding: 20px 10px !important;
   border: 1px solid #444;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -18,7 +18,7 @@
   transition: all .2s ease-in-out
 }
 
-.lm-info-block i {
+.lm-info-block .contact_icon {
   position: relative;
   font-size: 33px;
   color: #04b4e0;
@@ -26,21 +26,21 @@
 }
 
 .lm-info-block h4 {
-  font-size: 15px;
-  margin-top: 8px
+  font-size: 13px !important;
+  margin-top: 8px !important
 }
 
 .lm-info-block .lm-info-block-value {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  display: block;
-  margin: 10px 0;
-  color: #04b4e0
+  font-size: 30px !important;
+  line-height: 30px !important;
+  font-weight: 400 !important;
+  display: block !important;
+  margin: 10px 0 !important;
+  color: #04b4e0 !important
 }
 
 .lm-info-block .lm-info-block-value:empty {
-  margin: 0
+  margin: 0 !important
 }
 
 .contact_element {
