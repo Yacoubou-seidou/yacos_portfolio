@@ -5,35 +5,35 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { projects } from '../../data/Projects';
-const ProjectList = () => {
+const ProjectList = ({ handleProjectDetail }) => {
   return (
     projects.map((project, index) => {
-      <Card sx={{ maxWidth: 345 }} key={project.name + index}>
+      return <Card sx={{ backgroundColor: '#222222' }} key={project.name + index} className='project_image'>
         <CardMedia
           component="img"
-          alt="green iguana"
-          height="140"
+          alt={project.name}
+          height="200"
+          // width="100%"
           image={project.preview}
+          className='image_item'
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography variant="h4" component="div" sx={{ color: '#eee', fontFamily: 'poppins, Helvetica, sans-serif ', fontWeight: '600 ', fontSize: '14px' }}>
             {project.name}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {project.description}
-          </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">
-            {project.private ? <a id="ajax-page-close-button" href={`/${project.id}/details`}>
-              Details
-            </a> : <a id="ajax-page-close-button" href={project.link ? project.link : 'Console App'}>
-              Visite
-            </a>}
+        <CardActions sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
+          <Button size="small" onClick={() => handleProjectDetail(project)}>
+            Details
           </Button>
-          {project.private ? '' : <Button size="small"><a id="ajax-page-close-button" href={project.repo}>
+
+
+          {project.link !== '' ? <Button size="small"><a target='_blank' rel='noreferrer' href={project.link}>
+            Visit
+          </a> </Button> : <Button size="small" disabled={true} className='category'><span>{project.name === 'Sahelian Dev Website' ? 'Ongoing' : 'Console'}</span></Button>}
+          {project.private ? '' : project.repo ? <Button size="small"><a target='_blank' rel='noreferrer' href={project.repo}>
             Github
-          </a></Button>}
+          </a></Button> : ''}
         </CardActions>
       </Card>
     })
