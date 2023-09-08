@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ProjectGallery from './ProjectGallery';
 import { useEffect } from 'react';
 const ProjectDetails = ({ removeProjectDetail, projectDetail, nextProject, previewProject }) => {
 
@@ -34,82 +35,7 @@ const ProjectDetails = ({ removeProjectDetail, projectDetail, nextProject, previ
           <div className="row">
             <div className="col-sm-8 col-md-8 portfolio-block">
               <div className="owl-carousel portfolio-page-carousel owl-loaded owl-drag">
-                <div className="owl-stage-outer owl-height" style={{ height: 460 }}>
-                  <div
-                    className="owl-stage"
-                    style={{
-                      transform: "translate3d(-1400px, 0px, 0px)",
-                      transition: "all 0s ease 0s",
-                      width: 4900
-                    }}
-                  >
-                    <div
-                      className="owl-item cloned"
-                      style={{ width: 690, marginRight: 10 }}
-                    >
-                      <div className="item">
-                        <img src="img/portfolio/full/2.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div
-                      className="owl-item cloned"
-                      style={{ width: 690, marginRight: 10 }}
-                    >
-                      <div className="item">
-                        <img src="img/portfolio/full/3.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div
-                      className="owl-item active"
-                      style={{ width: 690, marginRight: 10 }}
-                    >
-                      <div className="item">
-                        <img src="img/portfolio/full/1.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div className="owl-item" style={{ width: 690, marginRight: 10 }}>
-                      <div className="item">
-                        <img src="img/portfolio/full/2.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div className="owl-item" style={{ width: 690, marginRight: 10 }}>
-                      <div className="item">
-                        <img src="img/portfolio/full/3.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div
-                      className="owl-item cloned"
-                      style={{ width: 690, marginRight: 10 }}
-                    >
-                      <div className="item">
-                        <img src="img/portfolio/full/1.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div
-                      className="owl-item cloned"
-                      style={{ width: 690, marginRight: 10 }}
-                    >
-                      <div className="item">
-                        <img src="img/portfolio/full/2.jpg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-nav">
-                  <div className="owl-prev" />
-                  <div className="owl-next" />
-                </div>
-                <div className="owl-dots">
-                  <div className="owl-dot active">
-                    <span />
-                  </div>
-                  <div className="owl-dot">
-                    <span />
-                  </div>
-                  <div className="owl-dot">
-                    <span />
-                  </div>
-                </div>
+                {projectDetail && projectDetail.images ? <ProjectGallery gallery={projectDetail.images} /> : ''}
               </div>
               <div className="portfolio-page-video embed-responsive embed-responsive-16by9">
                 <iframe

@@ -164,3 +164,7 @@ h6 {
 .info-block-w-icon .ci-text p {
   font-size: .95em;
 }
+
+.headerSection {
+  display: none;
+}
