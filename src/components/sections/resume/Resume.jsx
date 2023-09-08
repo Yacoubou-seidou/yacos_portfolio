@@ -1,4 +1,5 @@
 import { animationsArray } from '../../../data/animations';
+import './resume.css'
 const Resume = () => {
   const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
   return (
