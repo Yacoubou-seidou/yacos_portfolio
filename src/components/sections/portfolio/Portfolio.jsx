@@ -1,7 +1,9 @@
 import { animationsArray } from '../../../data/animations';
+import { projects } from '../../../data/Projects';
 import './portfolio.css'
 const Portfolio = () => {
   const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
+  console.log(projects);
   return (
     <section data-id="portfolio" className={`animated-section ${result}`}>
       <div className="page-title">
@@ -106,6 +108,7 @@ const Portfolio = () => {
                   <span className="category">YouTube Videos</span>
                 </figure>
               </div>
+
             </div>
           </div>
         </div>

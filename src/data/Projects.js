@@ -1,9 +1,10 @@
 export const projects = [
   {
-    name: 'Intra Codeloccol && Picsine Codeloccol',
+    id: 1,
+    name: 'Codeloccol Intranet',
     category: 'Website',
     status: 'Ongoing',
-    description: 'The Codeloccol intranet learning platform is an invaluable resource for junior web developers to develop their skills and progress in the program.  Piscine Codeloccol is an online platform that aids in selecting junior web developers for Codeloccol. It provides candidates with modules, progress tracking, and review feedback',
+    description: "Empowering Junior Web Developers and Identifying Future Talent The Codeloccol intranet serves a dual purpose: it's an essential learning platform for junior web developers seeking to enhance their skills and advance in the program, while also functioning as a robust tool for identifying and evaluating prospective talent for Codeloccol.The Codeloccol Intranet is more than an online platform; it's a dynamic ecosystem that empowers talent development and facilitates the discovery of tomorrow's coding stars within the Codeloccol community.",
     images: [
       {
         name: 'Dashboard',
@@ -31,9 +32,10 @@ export const projects = [
     preview: './images/previews/intraDash.png',
     private: true,
     repo: '',
-    stack: ['React.js', 'Node.js', 'JavaScript', 'useContext', 'Redux', 'Express.js', 'MaterialUi']
+    stack: ['React.js', 'Node.js', 'JavaScript', 'useContext', 'Redux', 'Express.js', 'MaterialUi', 'MongoDB']
   },
   {
+    id: 2,
     name: 'Codeloccol Website',
     category: 'Website',
     status: 'Done',
@@ -43,9 +45,10 @@ export const projects = [
     preview: './images/previews/codeloccol2.png',
     private: true,
     repo: '',
-    stack: ['HTML', 'CSS', 'React.js', 'Node.js', 'JavaScript', 'TypeScript', 'Express.js']
+    stack: ['HTML', 'CSS', 'React.js', 'Node.js', 'JavaScript', 'TypeScript', 'Express.js', 'MongoDB']
   },
   {
+    id: 3,
     name: 'Web Metric',
     category: 'Website',
     status: 'Done',
@@ -58,6 +61,7 @@ export const projects = [
     stack: ['HTML', 'CSS', 'React.js', 'JavaScript', 'Redux']
   },
   {
+    id: 4,
     name: 'Pure Fav',
     category: 'Packages',
     status: 'In Progress',
@@ -70,6 +74,7 @@ export const projects = [
     stack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
   },
   {
+    id: 5,
     name: 'Kondona',
     category: 'Web application',
     status: 'Done',
@@ -79,9 +84,10 @@ export const projects = [
     preview: './images/previews/kondo.png',
     private: false,
     repo: 'https://github.com/Yacoubou-seidou/Kondona',
-    stack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails']
+    stack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails', 'PostgreSQL']
   },
   {
+    id: 6,
     name: 'Console Hub',
     category: 'Websites',
     status: 'Done',
@@ -91,18 +97,37 @@ export const projects = [
     preview: './images/previews/gameConsole.png',
     private: false,
     repo: 'https://github.com/Yacoubou-seidou/gaming_console_reservation_front_end',
-    stack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails', 'React.js', 'Redux',]
+    stack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails', 'React.js', 'Redux', 'PostgreSQL']
   },
   {
+    id: 7,
     name: 'Sahelian Dev Website',
     category: 'Websites',
     status: 'Ongoing',
     description: "Sahelian Dev Website: Empowering Sahelian Startups with Online VisibilityAs a freelance team, we took on the mission of enhancing the online presence and accessibility of Sahelian startups through the creation of the Sahelian Dev Website. This dynamic platform serves as a gateway for users to effortlessly connect with Sahelian Dev's services and engage with them online. The integration of a mailer system streamlines communication, allowing users to easily reach out to Sahelian Dev for inquiries, collaboration opportunities, or support. Behind the scenes, our website boasts a powerful backend that facilitates a feature-rich blog, enabling Sahelian Dev to share valuable insights, updates, and resources with the community.",
-    images: ['./images/previews/sahelianPre.png', './images/imgs/sahelian2.png', './images/imgs/sahelian3.png', './images/imgs/sahelian4.png'],
+    images: [
+      { name: 'Banner', link: './images/previews/sahelianPre.png' },
+      { name: 'About', link: './images/imgs/sahelian2.png' },
+      { name: 'Service', link: './images/imgs/sahelian3.png' },
+      { name: 'Contact', link: './images/imgs/sahelian4.png' }
+    ],
     link: '',
     preview: './images/previews/sahelianPre.png',
     private: true,
     repo: '',
-    stack: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux', 'Express.js', 'Bootstrap']
+    stack: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux', 'Express.js', 'Bootstrap', 'MongoDB']
+  },
+  {
+    id: 8,
+    name: 'School Library',
+    category: 'Consoles app',
+    status: 'Done',
+    description: "School_library In this project,we  build an console app to record what books are in the library and who borrows them. The app allow you to add a new students or teachers, add new books and save records of who borrowed a given book.",
+    images: [],
+    link: '',
+    preview: './images/previews/schoolLib.png',
+    private: false,
+    repo: 'https://github.com/Yacoubou-seidou/School_library',
+    stack: ['Ruby', 'PostgreSQL']
   },
 ]
