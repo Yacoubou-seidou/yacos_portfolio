@@ -1,4 +1,7 @@
 import './index.css'
+import CloseIcon from '@mui/icons-material/Close';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 // eslint-disable-next-line react/prop-types
 const ProjectDetails = ({ removeProjectDetail, ProjectDetail }) => {
   console.log(ProjectDetail);
@@ -8,18 +11,17 @@ const ProjectDetails = ({ removeProjectDetail, ProjectDetail }) => {
         <div className="ajax-page-wrapper">
           <div className="ajax-page-nav">
             <div className="nav-item ajax-page-prev-next">
-              <a className="ajax-page-load" href="portfolio-3.html">
-                <i className="lnr lnr-chevron-left" />
+              <a className="ajax-page-load chevronleft">
+                <ChevronLeftIcon className='detail_icon' />
               </a>
-              <a className="ajax-page-load" href="portfolio-2.html">
-                <i className="lnr lnr-chevron-right" />
+              <a className="ajax-page-load" >
+                <ChevronRightIcon className='detail_icon' />
               </a>
             </div>
             <div className="nav-item ajax-page-close-button">
-              <button onClick={() => removeProjectDetail()}>
-                <i className="lnr lnr-cross" />
-                close
-              </button>
+              <a className="ajax-page-load" onClick={() => removeProjectDetail()}>
+                <CloseIcon className='detail_icon' />
+              </a>
             </div>
           </div>
           <div className="ajax-page-title">

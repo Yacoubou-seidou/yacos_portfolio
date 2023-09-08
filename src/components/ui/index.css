@@ -75,8 +75,7 @@
 
 .ajax-page-nav>div.nav-item a {
   display: inline-block;
-  height: 40px;
-  width: 40px;
+  padding: 5px;
   text-align: center;
   color: #b5b5b5;
   background-color: #444
@@ -87,7 +86,7 @@
   color: #fff
 }
 
-.ajax-page-nav>div.nav-item a i {
+.ajax-page-nav>div.nav-item a detail_icon {
   line-height: 40px;
   font-size: 22px
 }
@@ -110,6 +109,7 @@
 .ajax-page-page-content img {
   max-width: 100%
 }
+
 
 .project-description {
   display: block;
@@ -178,4 +178,8 @@
 .share-buttons a i {
   font-size: 14px;
   line-height: 26px
+}
+
+.nav-item .chevronleft {
+  margin-right: 7px;
 }
