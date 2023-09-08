@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { animationsArray } from '../../../data/animations';
+import { projects } from '../../../data/Projects';
 import ProjectList from '../../ui/ProjectList';
 import ProjectDetails from '../../ui/ProjectDetails';
 import './portfolio.css'
@@ -12,6 +13,37 @@ const Portfolio = () => {
   const removeProjectDetail = () => {
     setProjectDetail(null)
   }
+  const nextProject = () => {
+    if (projectDetail && projectDetail.id > 0) {
+      if (projectDetail.id === projects.length) {
+        return
+      }
+      if (projectDetail.id > projects.length) {
+        return
+      }
+      if (projectDetail.id < projects.length) {
+        setProjectDetail(projects[projectDetail.id])
+        return
+      }
+    }
+  }
+  const previewProject = () => {
+    if (projectDetail && projectDetail.id > 0) {
+      if (projectDetail.id === 1) {
+        return
+      }
+      if (projectDetail.id === projects.length) {
+        setProjectDetail(projects[projects.length - 2])
+        return
+      }
+      if (projectDetail.id < projects.length && projectDetail.id > 0) {
+        setProjectDetail(projects[projectDetail.id - 2])
+        return
+      }
+    }
+  }
+
+
   useEffect(() => {
     console.log(projectDetail);
   }, [projectDetail])
@@ -54,7 +86,12 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-    </section > : <ProjectDetails removeProjectDetail={removeProjectDetail} projectDetail={projectDetail} />
+    </section > : <ProjectDetails
+      removeProjectDetail={removeProjectDetail}
+      projectDetail={projectDetail}
+      nextProject={nextProject}
+      previewProject={previewProject}
+    />
   )
 }
 

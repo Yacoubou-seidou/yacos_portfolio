@@ -1,21 +1,25 @@
 import './index.css'
+import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-// eslint-disable-next-line react/prop-types
-const ProjectDetails = ({ removeProjectDetail, ProjectDetail }) => {
-  console.log(ProjectDetail);
+import { useEffect } from 'react';
+const ProjectDetails = ({ removeProjectDetail, projectDetail, nextProject, previewProject }) => {
+
+  useEffect(() => {
+    console.log(projectDetail);
+  }, [projectDetail])
   return (
-    ProjectDetail !== null ?
+    projectDetail !== null ?
       <div id="ajax-page" className="ajax-page-content">
         <div className="ajax-page-wrapper">
           <div className="ajax-page-nav">
             <div className="nav-item ajax-page-prev-next">
-              <a className="ajax-page-load chevronleft">
+              <a className="ajax-page-load chevronleft" onClick={() => previewProject()}>
                 <ChevronLeftIcon className='detail_icon' />
               </a>
               <a className="ajax-page-load" >
-                <ChevronRightIcon className='detail_icon' />
+                <ChevronRightIcon className='detail_icon' onClick={() => nextProject()} />
               </a>
             </div>
             <div className="nav-item ajax-page-close-button">
@@ -25,7 +29,7 @@ const ProjectDetails = ({ removeProjectDetail, ProjectDetail }) => {
             </div>
           </div>
           <div className="ajax-page-title">
-            <h1>Portfolio Project 1</h1>
+            <h1>{projectDetail ? projectDetail.name : ''}</h1>
           </div>
           <div className="row">
             <div className="col-sm-8 col-md-8 portfolio-block">
@@ -191,5 +195,29 @@ const ProjectDetails = ({ removeProjectDetail, ProjectDetail }) => {
       </div>
       : '')
 }
+ProjectDetails.propTypes = {
+  projectDetail: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    status: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
+    link: PropTypes.string.isRequired,
+    preview: PropTypes.string.isRequired,
+    private: PropTypes.bool.isRequired,
+    repo: PropTypes.string.isRequired,
+    stack: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+};
 
+ProjectDetails.propTypes = {
+  removeProjectDetail: PropTypes.func.isRequired,
+};
+ProjectDetails.propTypes = {
+  previewProject: PropTypes.func.isRequired,
+};
+ProjectDetails.propTypes = {
+  nextProject: PropTypes.func.isRequired,
+};
 export default ProjectDetails
