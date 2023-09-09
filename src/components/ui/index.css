@@ -33,3 +33,155 @@
   opacity: 1;
   background-color: rgba(255, 255, 255, .2)
 }
+
+.ajax-page-content {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  /* z-index: 999990000 !important; */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.ajax-page-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px 60px 50px
+}
+
+.ajax-page-nav {
+  text-align: right
+}
+
+.ajax-page-nav>div.nav-item {
+  position: relative;
+  display: inline-block;
+  margin: 0 3px
+}
+
+.ajax-page-nav>div.nav-item a {
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  color: #b5b5b5;
+  background-color: #444
+}
+
+.ajax-page-nav>div.nav-item a:hover {
+  background-color: #04b4e0;
+  color: #fff
+}
+
+.ajax-page-nav>div.nav-item a detail_icon {
+  line-height: 40px;
+  font-size: 22px
+}
+
+.ajax-page-title {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: left
+}
+
+.ajax-page-title h1 {
+  display: inline-block;
+  margin: 0
+}
+
+.portfolio-block {
+  padding-top: 30px
+}
+
+.ajax-page-page-content img {
+  max-width: 100%
+}
+
+
+.project-description {
+  display: block;
+  position: relative;
+  padding: 20px 25px 25px;
+  background-color: #333
+}
+
+.ajax-page-wrapper .block-title h3 {
+  font-size: 18px;
+  margin-bottom: 15px
+}
+
+.project-general-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px
+}
+
+.project-general-info li {
+  margin: 0 0 10px
+}
+
+.project-general-info .fa {
+  color: #04b4e0;
+  margin-right: 5px
+}
+
+.project-general-info p {
+  margin: 0
+}
+
+.share-buttons {
+  display: block;
+  margin: 25px 0 0
+}
+
+.share-buttons a {
+  display: inline-block;
+  margin: 0 3px 0 0;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  color: #b5b5b5;
+  background-color: #222;
+  border: 1px solid #222;
+  text-align: center;
+  border-radius: 0
+}
+
+.portfolio-page-content .share-buttons a {
+  margin: 0 7px 0 0
+}
+
+.share-buttons a:hover {
+  color: #fff;
+  background-color: #04b4e0;
+  border-color: #04b4e0
+}
+
+.share-buttons a:last-child {
+  margin-right: 0;
+  border-radius: 0
+}
+
+.share-buttons a i {
+  font-size: 14px;
+  line-height: 26px
+}
+
+.nav-item .chevronleft {
+  margin-right: 7px;
+}
+
+
+.detail_image {
+  width: 80%;
+  height: 500px;
+}
+
+
+.portfolio-page-carousel .carousel-indicators .active {
+  background-color: #04b4e0 !important;
+}
+
+.portfolio-page-carousel .carousel-indicators [data-bs-target] {
+  background-color: #aaa;
+}
