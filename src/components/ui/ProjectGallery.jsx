@@ -7,7 +7,7 @@ const ProjectGallery = ({ gallery }) => {
         {gallery.map((image, index) => (
           <Carousel.Item key={image + index} >
             <div >
-              <img src={image.link} alt={image.name} />
+              <img src={image.link} alt={image.name} className='detail_image' />
             </div>
             <Carousel.Caption>
               <div className="text">

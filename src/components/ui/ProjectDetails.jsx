@@ -6,13 +6,14 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ProjectGallery from './ProjectGallery';
 import { useEffect } from 'react';
 const ProjectDetails = ({ removeProjectDetail, projectDetail, nextProject, previewProject }) => {
-
+  const animationsArray = ['animated-section-moveFromLeft', 'animated-section-moveToRight']
+  const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
   useEffect(() => {
     console.log(projectDetail);
   }, [projectDetail])
   return (
     projectDetail !== null ?
-      <div id="ajax-page" className="ajax-page-content">
+      <div id="ajax-page" className={`ajax-page-content animated-section ${result}`}>
         <div className="ajax-page-wrapper">
           <div className="ajax-page-nav">
             <div className="nav-item ajax-page-prev-next">

@@ -35,21 +35,20 @@
 }
 
 .ajax-page-content {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100%;
-  z-index: 999990000 !important;
+  /* z-index: 999990000 !important; */
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* 
+
 .ajax-page-wrapper {
   max-width: 1170px;
   margin: 0 auto;
   padding: 20px 60px 50px
-} */
+}
 
 .ajax-page-nav {
   text-align: right
@@ -170,4 +169,19 @@
 
 .nav-item .chevronleft {
   margin-right: 7px;
+}
+
+
+.detail_image {
+  width: 80%;
+  height: 500px;
+}
+
+
+.portfolio-page-carousel .carousel-indicators .active {
+  background-color: #04b4e0 !important;
+}
+
+.portfolio-page-carousel .carousel-indicators [data-bs-target] {
+  background-color: #aaa;
 }
