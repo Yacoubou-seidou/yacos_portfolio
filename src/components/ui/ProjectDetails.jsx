@@ -5,15 +5,29 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ProjectGallery from './ProjectGallery';
 import { useEffect } from 'react';
+import PersonIcon from '@mui/icons-material/Person';
+import LanguageIcon from '@mui/icons-material/Language';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TechList from './TechList';
 const ProjectDetails = ({ removeProjectDetail, projectDetail, nextProject, previewProject }) => {
   const animationsArray = ['animated-section-moveFromLeft', 'animated-section-moveToRight']
   const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
   useEffect(() => {
-    console.log(projectDetail);
-  }, [projectDetail])
+    const element = document.getElementById('theMainHeader');
+    const container = document.getElementById('animatedSectionMain');
+    if (element) {
+      element.style.display = 'none'
+    }
+    if (container) {
+      container.classList.remove('col-8')
+      container.classList.add('col-12')
+      container.classList.add('p-0')
+    }
+  }, [])
   return (
     projectDetail !== null ?
-      <div id="ajax-page" className={`ajax-page-content animated-section ${result}`}>
+      <div id="ajax-page" className={`ajax-page-content animated-section p-0 ${result}`}>
         <div className="ajax-page-wrapper">
           <div className="ajax-page-nav">
             <div className="nav-item ajax-page-prev-next">
@@ -38,12 +52,6 @@ const ProjectDetails = ({ removeProjectDetail, projectDetail, nextProject, previ
               <div className="owl-carousel portfolio-page-carousel owl-loaded owl-drag">
                 {projectDetail && projectDetail.images ? <ProjectGallery gallery={projectDetail.images} /> : ''}
               </div>
-              <div className="portfolio-page-video embed-responsive embed-responsive-16by9">
-                <iframe
-                  className="embed-responsive-item"
-                  src="https://player.vimeo.com/video/97102654?autoplay=0"
-                />
-              </div>
             </div>
             <div className="col-sm-4 col-md-4 portfolio-block">
               {/* Project Description */}
@@ -54,26 +62,25 @@ const ProjectDetails = ({ removeProjectDetail, projectDetail, nextProject, previ
                 <ul className="project-general-info">
                   <li>
                     <p>
-                      <i className="fa fa-user" /> Alex Smith
+                      <PersonIcon sx={{ fontSize: 25 }} className='details_icon' /> Yacoubou Seidou
                     </p>
                   </li>
                   <li>
                     <p>
-                      <i className="fa fa-globe" />{" "}
-                      <a href="#" target="_blank">
-                        www.project-site.com
+                      <LanguageIcon sx={{ fontSize: 25 }} className='details_icon' /> {" "}
+                      <a href={projectDetail.link} target="_blank" rel='noreferrer'>
+                        Website
                       </a>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <i className="fa fa-calendar" /> 25 december, 2016
+                      <CalendarMonthIcon sx={{ fontSize: 25 }} className='details_icon' />  {projectDetail.date}
                     </p>
                   </li>
                 </ul>
                 <p className="text-justify">
-                  Aliquam euismod aliquam massa, quis eleifend dui sodales vitae.
-                  Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  {projectDetail.description}
                 </p>
                 {/* /Project Description */}
                 {/* Technology */}
@@ -82,38 +89,17 @@ const ProjectDetails = ({ removeProjectDetail, projectDetail, nextProject, previ
                     <h3>Technology</h3>
                   </div>
                   <ul className="tags">
-                    <li>
-                      <a>HTML5</a>
-                    </li>
-                    <li>
-                      <a>CSS3</a>
-                    </li>
-                    <li>
-                      <a>jQuery</a>
-                    </li>
-                    <li>
-                      <a>Ajax</a>
-                    </li>
-                    <li>
-                      <a>PHP5</a>
-                    </li>
+                    <TechList array={projectDetail.stack} />
                   </ul>
                 </div>
-                {/* /Technology */}
-                {/* Share Buttons */}
-                <div className="btn-group share-buttons">
+                <div className="share-buttons">
                   <div className="block-title">
-                    <h3>Share</h3>
+                    <h3>Code</h3>
                   </div>
-                  <a href="#" target="_blank" className="btn">
-                    <i className="fab fa-facebook-f" />{" "}
-                  </a>
-                  <a href="#" target="_blank" className="btn">
-                    <i className="fab fa-twitter" />{" "}
-                  </a>
-                  <a href="#" target="_blank" className="btn">
-                    <i className="fab fa-dribbble" />{" "}
-                  </a>
+                  {projectDetail.repo !== '' ? <a href={projectDetail.repo} rel='noreferrer' target="_blank" className="">
+                    <GitHubIcon sx={{ fontSize: 35 }} className='code_icon' />
+                  </a> : <p className='private_repo'>Private</p>}
+
                 </div>
               </div>
             </div>
@@ -129,6 +115,7 @@ ProjectDetails.propTypes = {
     category: PropTypes.string.isRequired,
     status: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
     link: PropTypes.string.isRequired,
     preview: PropTypes.string.isRequired,
