@@ -3,17 +3,12 @@ import Carousel from 'react-bootstrap/Carousel';
 const ProjectGallery = ({ gallery }) => {
   return (
     gallery ?
-      <Carousel pause='hover'>
+      <Carousel controls={false} pause='hover' className='main_carousel'>
         {gallery.map((image, index) => (
-          <Carousel.Item key={image + index} >
-            <div >
+          <Carousel.Item key={image + index}  >
+            <div className='image_div'>
               <img src={image.link} alt={image.name} className='detail_image' />
             </div>
-            <Carousel.Caption>
-              <div className="text">
-                <p>{image.name}</p>
-              </div>
-            </Carousel.Caption>
           </Carousel.Item>
         ))}
       </Carousel> : ''

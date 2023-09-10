@@ -7,10 +7,26 @@ import './portfolio.css'
 const Portfolio = () => {
   const [projectDetail, setProjectDetail] = useState(null)
   const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
+  const [profileEl, setProfileEl] = useState(null)
+  const [containerAnime, setContainerAnime] = useState(null)
+  useEffect(() => {
+    const element = document.getElementById('theMainHeader');
+    const container = document.getElementById('animatedSectionMain');
+    if (element) {
+      setProfileEl(element)
+    }
+    if (container) {
+      setContainerAnime(container)
+    }
+  }, [profileEl, containerAnime])
   const handleProjectDetail = (project) => {
     setProjectDetail(project)
   }
   const removeProjectDetail = () => {
+    profileEl.style.display = 'block'
+    containerAnime.classList.remove('col-12')
+    containerAnime.classList.add('col-8')
+    containerAnime.classList.remove('p-0')
     setProjectDetail(null)
   }
   const nextProject = () => {
@@ -42,11 +58,6 @@ const Portfolio = () => {
       }
     }
   }
-
-
-  useEffect(() => {
-    console.log(projectDetail);
-  }, [projectDetail])
   return (
     projectDetail === null ? <section data-id="portfolio" className={`animated-section ${result}`}>
       <div className="page-title">

@@ -12,7 +12,7 @@ import Portfolio from '../sections/portfolio/Portfolio';
 
 const RoundAbout = () => {
   return (
-    <section className="content col-8 animated-sections">
+    <section id='animatedSectionMain' className="content col-8 animated-sections">
       <Outlet />
     </section>
   )
@@ -21,7 +21,7 @@ const RoundAbout = () => {
 const HomePage = () => {
   return (
     <div className='homePage d-flex justify-content-start '>
-      <div className="headerSection col-4">
+      <div id='theMainHeader' className="headerSection col-4">
         <Header />
       </div>
 
