@@ -88,3 +88,7 @@
   background-color: #444 !important;
   padding: 3px;
 }
+
+.section-content {
+  width: 100%;
+}
