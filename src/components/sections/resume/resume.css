@@ -11,12 +11,12 @@
 }
 
 .timeline-second-style .left-part {
-  width: 30%;
-  display: table-cell;
-  padding-right: 25px;
-  min-height: 100%;
-  text-align: right;
-  vertical-align: top
+  width: 30% !important;
+  display: table-cell !important;
+  padding-right: 25px !important;
+  min-height: 100% !important;
+  text-align: right !important;
+  vertical-align: top !important
 }
 
 .timeline-second-style .right-part {
@@ -29,7 +29,8 @@
 
 .timeline-second-style .right-part p,
 .timeline-second-style .right-part p>* {
-  font-size: .92em
+  font-size: .82em !important;
+  color: #d5d5d5;
 }
 
 .timeline-second-style .divider {
@@ -71,15 +72,15 @@
 }
 
 .timeline-second-style .item-title {
-  font-size: 16px;
+  font-size: 16px !important;
   margin-bottom: 3px
 }
 
 .timeline-second-style .item-period {
-  color: #aaa;
-  margin: 3px 0;
-  font-size: 14px;
-  line-height: 1.4em
+  color: #aaa !important;
+  margin: 3px 0 !important;
+  font-size: 12px !important;
+  line-height: 1.4em !important
 }
 
 .timeline-second-style .item-company {
@@ -109,11 +110,12 @@
 }
 
 .skills-info.skills-second-style h4 {
+  color: #a5a6a7 !important;
   font-size: 13px;
   line-height: 1.1em;
   position: relative;
   float: left;
-  margin: 0 0 4px
+  margin: 0 0 30px
 }
 
 .skills-second-style .skill-container {
@@ -138,63 +140,9 @@
   background-color: #04b4e0
 }
 
-.skills-second-style .skill-value {
-  font-size: 11px;
-  line-height: 1.1em;
-  position: relative;
-  float: right;
-  margin: 0 0 4px;
-  color: #aaa
-}
-
-.skills-second-style .skill-percentage {
-  background-color: #04b4e0;
-  border: 2px solid #222;
-  -moz-border-radius: 9px;
-  -webkit-border-radius: 9px;
-  border-radius: 9px;
-  height: 8px;
-  padding: 0
-}
-
-.skills-second-style .skill-container.skill-1 .skill-percentage {
-  width: 95%
-}
-
-.skills-second-style .skill-container.skill-2 .skill-percentage {
-  width: 65%
-}
-
-.skills-second-style .skill-container.skill-3 .skill-percentage {
-  width: 80%
-}
-
-.skills-second-style .skill-container.skill-4 .skill-percentage {
-  width: 90%
-}
-
-.skills-second-style .skill-container.skill-5 .skill-percentage {
-  width: 95%
-}
-
-.skills-second-style .skill-container.skill-6 .skill-percentage {
-  width: 85%
-}
-
-.skills-second-style .skill-container.skill-7 .skill-percentage {
-  width: 100%
-}
-
-.skills-second-style .skill-container.skill-8 .skill-percentage {
-  width: 75%
-}
-
-.skills-second-style .skill-container.skill-9 .skill-percentage {
-  width: 90%
-}
-
 .knowledges {
-  list-style: none
+  list-style: none;
+  padding-left: 0;
 }
 
 .knowledges li {

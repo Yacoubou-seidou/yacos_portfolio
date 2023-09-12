@@ -13,7 +13,7 @@ export const testimonials = [
   },
   {
     image: 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png',
-    text: 'I definitely want to work with you again',
+    text: 'I definitely want to work with you again.',
     author: 'Anonymous',
     company: 'Microverse Student'
   },

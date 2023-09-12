@@ -20,29 +20,27 @@ const Resume = () => {
             <div className="timeline timeline-second-style clearfix">
               <div className="timeline-item clearfix">
                 <div className="left-part">
-                  <h5 className="item-period">2008</h5>
-                  <span className="item-company">University of Studies</span>
+                  <h5 className="item-period">2022</h5>
+                  <span className="item-company">Codeloccol</span>
                 </div>
                 <div className="divider"></div>
                 <div className="right-part">
-                  <h4 className="item-title">Frontend Development</h4>
-                  <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus
-                    sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
+                  <h4 className="item-title">Full-stack MERN Development</h4>
+                  <p>During my time at Codeloccol in 2022, I delved deep into Full-stack MERN Development. I had the opportunity to work on exciting projects, utilizing MongoDB, Express.js, React.js, and Node.js to build robust and dynamic web applications. This experience honed my skills in creating seamless user experiences and scalable back-end systems that are at the forefront of modern web development.</p>
+                </div>
+              </div>
+              <div className="timeline-item clearfix">
+                <div className="left-part">
+                  <h5 className="item-period">2023</h5>
+                  <span className="item-company">Microverse</span>
+                </div>
+                <div className="divider"></div>
+                <div className="right-part">
+                  <h4 className="item-title">Remote Full Stack Web Development Program</h4>
+                  <p>In 2023, I enrolled in the prestigious Remote Full Stack Web Development Program at Microverse. During this intensive program, I acquired comprehensive knowledge and hands-on experience in web development. I honed my skills in both front-end and back-end technologies, collaborated with global peers, and gained the ability to build fully functional web applications. This program has been instrumental in shaping my career as a Full Stack Developer.</p>
                 </div>
               </div>
 
-              <div className="timeline-item clearfix">
-                <div className="left-part">
-                  <h5 className="item-period">2007</h5>
-                  <span className="item-company">University of Studies</span>
-                </div>
-                <div className="divider"></div>
-                <div className="right-part">
-                  <h4 className="item-title">Graphic Design</h4>
-                  <p>Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis,
-                    aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.</p>
-                </div>
-              </div>
             </div>
 
             <div className="white-space-50"></div>
@@ -54,40 +52,28 @@ const Resume = () => {
             <div className="timeline timeline-second-style clearfix">
               <div className="timeline-item clearfix">
                 <div className="left-part">
-                  <h5 className="item-period">2016 - Current</h5>
-                  <span className="item-company">Google</span>
+                  <h5 className="item-period">2023 - Current</h5>
+                  <span className="item-company">Microverse & Codeloccol</span>
                 </div>
                 <div className="divider"></div>
                 <div className="right-part">
-                  <h4 className="item-title">Lead Ui/Ux Designer</h4>
-                  <p>Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend
-                    tristique posuere. Sed vitae dui nec magna.</p>
+                  <h4 className="item-title">
+                    Mentor</h4>
+                  <p>Mentored junior web developers, providing technical support through code reviews.
+                    Proposed improvements to code organization to improve code quality and overall performance.
+                    Provided advice and tips on how to maintain motivation to maintain longevity in the program.</p>
                 </div>
               </div>
-
               <div className="timeline-item clearfix">
                 <div className="left-part">
-                  <h5 className="item-period">2013 - 2016</h5>
-                  <span className="item-company">Adobe</span>
+                  <h5 className="item-period">2022 - Current</h5>
+                  <span className="item-company">Freelance</span>
                 </div>
                 <div className="divider"></div>
                 <div className="right-part">
-                  <h4 className="item-title">Senior Ui/Ux Designer</h4>
-                  <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare
-                    felis id, congue libero. Nam volutpat euismod quam.</p>
-                </div>
-              </div>
-
-              <div className="timeline-item clearfix">
-                <div className="left-part">
-                  <h5 className="item-period">2011 - 2013</h5>
-                  <span className="item-company">Google</span>
-                </div>
-                <div className="divider"></div>
-                <div className="right-part">
-                  <h4 className="item-title">Junior Ui/Ux Designer</h4>
-                  <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue vitae nunc ac, sodales
-                    ultricies diam. Nullam justo leo, tincidunt sit amet.</p>
+                  <h4 className="item-title">
+                    Full Stack Software Developer</h4>
+                  <p>Since 2022, I have been working as a freelance Full Stack Software Developer. During this period, I have had the privilege of collaborating with diverse clients and taking on a wide range of projects. I&apos;ve leveraged my expertise in both front-end and back-end development to create custom solutions that meet the unique needs of each client. This experience has allowed me to continuously expand my skill set and deliver high-quality, tailored software solutions.</p>
                 </div>
               </div>
             </div>
@@ -98,41 +84,28 @@ const Resume = () => {
           <div className="col-xs-12 col-sm-5">
 
             <div className="block-title">
-              <h3>Design <span>Skills</span></h3>
+              <h3>Front-end <span>Tools</span></h3>
             </div>
 
             <div className="skills-info skills-second-style">
 
               <div className="skill clearfix">
-                <h4>Web Design</h4>
-                <div className="skill-value">95%</div>
-              </div>
-              <div className="skill-container skill-1">
-                <div className="skill-percentage"></div>
+                <h4>JavaScript</h4>
               </div>
 
               <div className="skill clearfix">
-                <h4>Print Design</h4>
-                <div className="skill-value">65%</div>
-              </div>
-              <div className="skill-container skill-2">
-                <div className="skill-percentage"></div>
+                <h4>React.js</h4>
               </div>
 
               <div className="skill clearfix">
-                <h4>Logo Design</h4>
-                <div className="skill-value">80%</div>
-              </div>
-              <div className="skill-container skill-3">
-                <div className="skill-percentage"></div>
+                <h4>Redux.js</h4>
               </div>
 
               <div className="skill clearfix">
-                <h4>Graphic Design</h4>
-                <div className="skill-value">90%</div>
+                <h4>HTML/CSS</h4>
               </div>
-              <div className="skill-container skill-4">
-                <div className="skill-percentage"></div>
+              <div className="skill clearfix">
+                <h4>Electron.js</h4>
               </div>
 
 
@@ -142,51 +115,37 @@ const Resume = () => {
             <div className="white-space-10"></div>
 
             <div className="block-title">
-              <h3>Coding <span>Skills</span></h3>
+              <h3>Back-end <span>Tools</span></h3>
             </div>
 
             <div className="skills-info skills-second-style">
 
               <div className="skill clearfix">
                 <h4>JavaScript</h4>
-                <div className="skill-value">95%</div>
-              </div>
-              <div className="skill-container skill-5">
-                <div className="skill-percentage"></div>
               </div>
 
               <div className="skill clearfix">
-                <h4>PHP</h4>
-                <div className="skill-value">85%</div>
-              </div>
-              <div className="skill-container skill-6">
-                <div className="skill-percentage"></div>
+                <h4>Node.js</h4>
               </div>
 
               <div className="skill clearfix">
-                <h4>HTML/CSS</h4>
-                <div className="skill-value">100%</div>
-              </div>
-              <div className="skill-container skill-7">
-                <div className="skill-percentage"></div>
+                <h4>Ruby</h4>
               </div>
 
               <div className="skill clearfix">
-                <h4>Smarty/Twig</h4>
-                <div className="skill-value">75%</div>
-              </div>
-              <div className="skill-container skill-8">
-                <div className="skill-percentage"></div>
+                <h4>Ruby on Rails</h4>
               </div>
 
               <div className="skill clearfix">
-                <h4>Perl</h4>
-                <div className="skill-value">90%</div>
-              </div>
-              <div className="skill-container skill-9">
-                <div className="skill-percentage"></div>
+                <h4>PostgreSQL</h4>
               </div>
 
+              <div className="skill clearfix">
+                <h4>MongoDB</h4>
+              </div>
+              <div className="skill clearfix">
+                <h4>Express.js</h4>
+              </div>
             </div>
 
 
@@ -196,19 +155,22 @@ const Resume = () => {
             </div>
 
             <ul className="knowledges">
-              <li>Marketing</li>
-              <li>Print</li>
-              <li>Digital Design</li>
-              <li>Social Media</li>
+              <li>GitHub</li>
+              <li>Data Structures</li>
+              <li>Teamwork</li>
+              <li>Agile</li>
               <li>Time Management</li>
               <li>Communication</li>
               <li>Problem-Solving</li>
-              <li>Social Networking</li>
-              <li>Flexibility</li>
+              <li>Pair Programming</li>
+              <li>Kanban</li>
+              <li>Web Design</li>
+              <li>Algorithms</li>
+              <li>Project Management</li>
             </ul>
           </div>
 
-          <div className="white-space-50"></div>
+          {/* <div className="white-space-50"></div>
           <div className="row">
             <div className="col-xs-12 col-sm-12">
               <div className="block-title">
@@ -263,7 +225,7 @@ const Resume = () => {
               </div>
             </div>
 
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
