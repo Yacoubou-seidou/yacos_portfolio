@@ -5,7 +5,7 @@ import Header from '../sections/header/Header'
 import Banner from '../sections/banner/Banner'
 import Contact from '../sections/contact/Contact';
 import About from '../sections/about/About';
-import Blog from '../sections/blog/Blog';
+// import Blog from '../sections/blog/Blog';
 import Resume from '../sections/resume/Resume';
 import Portfolio from '../sections/portfolio/Portfolio';
 
@@ -31,7 +31,7 @@ const HomePage = () => {
           <Route path="/about-me" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/blog" element={<Blog />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>

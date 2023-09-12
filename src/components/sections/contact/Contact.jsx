@@ -11,7 +11,6 @@ const Contact = () => {
       <div className="page-title">
         <h2>Contact</h2>
       </div>
-
       <div className="section-content col-12">
 
         <div className="row">
