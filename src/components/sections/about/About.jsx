@@ -76,8 +76,7 @@ const About = () => {
                   </div>
                   <div className="ci-text">
                     <h4>Ecommerce</h4>
-                    <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit
-                      amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
+                    <p>I specialize in creating stunning e-commerce websites that not only look great but also drive sales. My expertise in user experience design and seamless checkout processes ensures a delightful shopping experience for your customers.</p>
                   </div>
                 </div>
                 <div className="info-block-w-icon">
@@ -85,9 +84,8 @@ const About = () => {
                     <DevicesIcon sx={{ fontSize: 42 }} className='doIcons' />
                   </div>
                   <div className="ci-text">
-                    <h4>Front-end Developement</h4>
-                    <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit
-                      amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
+                    <h4>Front-end Development</h4>
+                    <p>Front-end development is my passion. I craft responsive and pixel-perfect websites that engage users and bring your brand to life. From HTML and CSS to JavaScript frameworks, I&apos;ve got it all covered.</p>
                   </div>
                 </div>
               </div>
@@ -102,9 +100,8 @@ const About = () => {
                     <DnsIcon sx={{ fontSize: 42 }} className='doIcons' />
                   </div>
                   <div className="ci-text">
-                    <h4>Back-end Developement</h4>
-                    <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit
-                      amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
+                    <h4>Back-end Development</h4>
+                    <p>I&apos;m well-versed in back-end development, ensuring that your website&apos;s functionality is robust and secure. From database design to server-side scripting, I create the backbone of your digital presence.</p>
                   </div>
                 </div>
                 <div className="info-block-w-icon">
@@ -113,14 +110,14 @@ const About = () => {
                   </div>
                   <div className="ci-text">
                     <h4>Project Management</h4>
-                    <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit
-                      amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
+                    <p>Effective project management is key to the success of any digital endeavor. I bring a wealth of experience in organizing and executing projects, ensuring they are completed on time and within budget.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div className="white-space-30"></div>
         <div className="row">
           <div className="col-xs-12 col-sm-12">
