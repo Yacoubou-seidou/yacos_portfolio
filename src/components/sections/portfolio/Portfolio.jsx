@@ -69,7 +69,7 @@ const Portfolio = () => {
         <div className="row">
           <div className="col-xs-12 col-sm-12">
             <div className="portfolio-content">
-              <div className="portfolio-grid col-12 three-columns">
+              <div className="portfolio-grid three-columns">
                 <ProjectList handleProjectDetail={handleProjectDetail} />
               </div>
             </div>

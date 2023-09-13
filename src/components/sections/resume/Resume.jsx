@@ -121,15 +121,7 @@ const Resume = () => {
             <div className="skills-info skills-second-style">
 
               <div className="skill clearfix">
-                <h4>JavaScript</h4>
-              </div>
-
-              <div className="skill clearfix">
                 <h4>Node.js</h4>
-              </div>
-
-              <div className="skill clearfix">
-                <h4>Ruby</h4>
               </div>
 
               <div className="skill clearfix">

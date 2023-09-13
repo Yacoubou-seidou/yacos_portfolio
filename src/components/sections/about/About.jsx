@@ -170,7 +170,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row about_container">
           <div className="col-xs-12 col-sm-4">
             <div className="fun-fact gray-default">
               <WorkIcon sx={{ fontSize: 35 }} className="lnr lnr-heart" />

@@ -171,6 +171,10 @@ h6 {
     width: 0 !important;
   }
 
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
   #animatedSectionMain {
     width: 100%;
   }
@@ -425,55 +429,8 @@ h6 {
 }
 
 @media only screen and (max-width:768px) {
-  .portfolio-grid figure {
-    width: 50%
-  }
-
-  .info-list {
-    margin-top: 20px
-  }
-
-  .blog-post-content {
-    padding: 0;
-    margin: 30px 0 0
-  }
-
-  .blog-masonry.two-columns .item,
-  .blog-masonry.three-columns .item {
-    width: 100%
-  }
-
-  .portfolio-grid figure,
-  .portfolio-grid.three-columns figure {
-    width: 50%
-  }
-
-  .portfolio-grid.four-columns figure,
-  .portfolio-grid.five-columns figure {
-    width: 33.3333333%
-  }
-
-  .page-portfolio-loaded .portfolio-page-wrapper {
-    padding-left: 30px;
-    padding-right: 30px
-  }
-
-  .portfolio-page-carousel .owl-nav .owl-prev {
-    margin-left: 0
-  }
-
-  .portfolio-page-carousel .owl-nav .owl-next {
-    margin-right: 0
-  }
-
-  .portfolio-page-carousel .owl-nav .owl-prev,
-  .portfolio-page-carousel .owl-nav .owl-next {
-    background-color: rgba(255, 255, 255, .55)
-  }
-
-  .single-page-content .portfolio-page-content {
-    padding-left: 30px;
-    padding-right: 30px
+  .project-description {
+    font-size: 12px !important;
   }
 }
 
@@ -483,21 +440,16 @@ h6 {
     width: 100%
   }
 
-  .portfolio-grid figure {
-    width: 100%
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
   }
 
-  .portfolio-grid.three-columns figure,
-  .portfolio-grid.two-columns figure {
-    width: 100%
+  .ajax-page-wrapper {
+    padding: 15px !important;
   }
 
-  .portfolio-grid figure,
-  .portfolio-grid.two-columns figure,
-  .portfolio-grid.three-columns figure,
-  .portfolio-grid.four-columns figure,
-  .portfolio-grid.five-columns figure {
-    width: 100%
+  .ajax-page-title h1 {
+    font-size: 22px !important;
   }
 
   .timeline-second-style .timeline-item {
@@ -539,4 +491,44 @@ h6 {
     margin: 0;
     width: 100%
   }
+
+  .title-block h2 {
+    font-size: 32px !important;
+    line-height: 30px !important;
+  }
+
+  .title-block .sp-subtitle {
+    font-size: 16px !important;
+  }
+
+  .contact_element {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+
+  .info-block-w-icon {
+    height: 300px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .testimonial {
+    height: 300px !important;
+  }
+
+  .carousel-caption {
+    bottom: auto !important;
+  }
+
+  .animated-section {
+    padding: 15px;
+  }
+
+  .about_container {
+    gap: 20px !important;
+  }
+
+  /* .skill.clearfix h4 {
+    width: 100% !important;
+    text-align: center !important;
+  } */
 }
