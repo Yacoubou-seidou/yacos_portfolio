@@ -1,0 +1,156 @@
+.timeline-second-style .timeline-item {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding-bottom: 15px
+}
+
+.timeline-second-style .timeline-item:last-child {
+  padding-bottom: 0
+}
+
+.timeline-second-style .left-part {
+  width: 30% !important;
+  display: table-cell !important;
+  padding-right: 25px !important;
+  min-height: 100% !important;
+  text-align: right !important;
+  vertical-align: top !important
+}
+
+.timeline-second-style .right-part {
+  width: 70%;
+  display: table-cell;
+  padding-left: 25px;
+  padding-right: 15px;
+  vertical-align: top
+}
+
+.timeline-second-style .right-part p,
+.timeline-second-style .right-part p>* {
+  font-size: .82em !important;
+  color: #d5d5d5;
+}
+
+.timeline-second-style .divider {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  bottom: 0;
+  width: 1px;
+  background-color: #444
+}
+
+.timeline-second-style .divider:before {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-top: 4px;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  margin-left: -8px;
+  border-radius: 10px;
+  background-color: #04b4e0;
+  opacity: .25;
+  z-index: 0
+}
+
+.timeline-second-style .divider:after {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-top: 8px;
+  width: 9px;
+  height: 9px;
+  margin-left: -4px;
+  background-color: #222;
+  border-radius: 5px;
+  border: 2px solid #04b4e0;
+  z-index: 1
+}
+
+.timeline-second-style .item-title {
+  font-size: 16px !important;
+  margin-bottom: 3px
+}
+
+.timeline-second-style .item-period {
+  color: #aaa !important;
+  margin: 3px 0 !important;
+  font-size: 12px !important;
+  line-height: 1.4em !important
+}
+
+.timeline-second-style .item-company {
+  display: block;
+  margin: 0 0 4px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.45em;
+  color: #a5a6a7
+}
+
+.timeline-second-style .timeline-item:last-child .right-part {
+  padding-bottom: 0
+}
+
+.timeline-second-style .item-logo {
+  display: block;
+  margin-bottom: 10px
+}
+
+.timeline-second-style .item-logo img {
+  max-height: 40px
+}
+
+.skills-info.skills-second-style {
+  margin-bottom: 30px
+}
+
+.skills-info.skills-second-style h4 {
+  color: #04b4e0 !important;
+  font-size: 13px;
+  line-height: 1.1em;
+  position: relative;
+  float: left;
+  margin: 0 0 30px
+}
+
+.skills-second-style .skill-container {
+  position: relative;
+  display: inline-block;
+  background-color: #222;
+  border: 1px solid #04b4e0;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 10px;
+  margin-bottom: 8px;
+  width: 100%
+}
+
+.skills-second-style .skill-container:before {
+  content: '';
+  position: absolute;
+  background-color: #04b4e0
+}
+
+.knowledges {
+  list-style: none;
+  padding-left: 0;
+}
+
+.knowledges li {
+  display: inline-block;
+  background-color: #04b4e0;
+  border-radius: 3px;
+  color: #fff;
+  padding: 1px 10px;
+  margin: 3px 2px;
+  font-size: 13px
+}

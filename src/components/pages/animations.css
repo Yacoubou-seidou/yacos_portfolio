@@ -1,0 +1,100 @@
+.animated-section-moveFromLeft {
+  -webkit-animation: moveFromLeft .8s ease both;
+  animation: moveFromLeft .8s ease both
+}
+
+.animated-section-moveFromRight {
+  -webkit-animation: moveFromRight .8s ease both;
+  animation: moveFromRight .8s ease both
+}
+
+@-webkit-keyframes moveFromLeft {
+  from {
+    -webkit-transform: translateX(-100%)
+  }
+}
+
+@keyframes moveFromLeft {
+  from {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
+  }
+}
+
+@-webkit-keyframes moveFromRight {
+  from {
+    -webkit-transform: translateX(100%)
+  }
+}
+
+@keyframes moveFromRight {
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%)
+  }
+}
+
+.animated-section-scaleUp {
+  -webkit-animation: scaleUp .7s ease both;
+  animation: scaleUp .8s ease both
+}
+
+.animated-section-scaleUpDown {
+  -webkit-animation: scaleUpDown .5s ease both;
+  animation: scaleUpDown .8s ease both
+}
+
+.animated-section-scaleDownCenter {
+  -webkit-animation: scaleDownCenter .4s ease-in both;
+  animation: scaleDownCenter .8s ease-in both
+}
+
+.animated-section-scaleUpCenter {
+  -webkit-animation: scaleUpCenter .4s ease-out both;
+  animation: scaleUpCenter .8s ease-out both
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(.8)
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(.8);
+    transform: scale(.8)
+  }
+}
+
+@-webkit-keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.2)
+  }
+}
+
+@keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2)
+  }
+}
+
+@-webkit-keyframes scaleUpCenter {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(.7)
+  }
+}
+
+@keyframes scaleUpCenter {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(.7);
+    transform: scale(.7)
+  }
+}
