@@ -436,6 +436,10 @@ h6 {
   .project-description {
     font-size: 12px !important;
   }
+
+  #animatedSectionMain {
+    padding: 20px;
+  }
 }
 
 @media only screen and (max-width:480px) {
