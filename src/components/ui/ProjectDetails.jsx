@@ -51,13 +51,13 @@ const ProjectDetails = ({ removeProjectDetail, projectDetail, nextProject, previ
           <div className="ajax-page-title">
             <h1>{projectDetail ? projectDetail.name : ''}</h1>
           </div>
-          <div className="row">
-            <div className="col-sm-8 col-md-8 portfolio-block">
+          <div className="row details_container">
+            <div className="col-sm-12 col-md-12 col-lg-8 portfolio-block">
               <div className="owl-carousel portfolio-page-carousel owl-loaded owl-drag">
                 {projectDetail && projectDetail.images ? <ProjectGallery gallery={projectDetail.images} /> : ''}
               </div>
             </div>
-            <div className="col-sm-4 col-md-4 portfolio-block">
+            <div className="col-sm-12 col-md-12 col-lg-4 portfolio-block">
               {/* Project Description */}
               <div className="project-description">
                 <div className="block-title">
