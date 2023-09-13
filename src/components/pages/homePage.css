@@ -167,10 +167,28 @@ h6 {
 
 
 @media only screen and (max-width:1024px) {
-  .headerSection {
+  #theMainHeader {
+    width: 0 !important;
+  }
+
+  #animatedSectionMain {
+    width: 100%;
+  }
+
+  .animated-section {
+    height: auto !important;
+  }
+
+  .section-content {
+    height: 100% !important;
+    /* overflow: hidden !important; */
+  }
+
+  .header {
     position: absolute;
     width: 100%;
     max-width: 330px;
+    /* height: 100% !important; */
     top: 0;
     right: 0;
     bottom: 0;
@@ -180,19 +198,22 @@ h6 {
     text-align: center;
     opacity: 1;
     visibility: visible;
-    overflow: auto;
+    overflow: auto !important;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
     -ms-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out
+    transition: all .25s ease-in-out;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
 
   .header .copyrights {
     right: 0;
     width: 100%;
-    position: relative;
-    margin-top: 30px
+    margin-top: 30px;
   }
 
   .page {
@@ -214,16 +235,33 @@ h6 {
   .animated-section,
   .single-page-content {
     border-radius: 0;
-    overflow: auto !important
+    overflow-y: auto !important
   }
 
   .header-titles h2 {
-    font-size: 30px;
-    margin-bottom: 10px
+    font-size: 20px !important;
+    margin-bottom: 5px !important
+  }
+
+  .social-links {
+    margin-top: 8px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .header-titles {
+    height: 50px !important;
+  }
+
+  .header-content {
+    width: 100% !important;
+    align-items: center !important;
+    padding: 0 !important;
+    min-height: auto !important;
+    gap: 5px !important;
   }
 
   .header-titles h4 {
-    font-size: 17px
+    font-size: 17px !important
   }
 
   .header-photo {
@@ -243,8 +281,16 @@ h6 {
     box-shadow: none
   }
 
+  .navContent {
+    width: 100% !important;
+    background-color: #444 !important;
+    border: none !important;
+    height: auto !important;
+  }
+
   ul.main-menu {
-    margin: 30px 0
+    margin: 30px 0;
+    box-shadow: none !important;
   }
 
   ul.main-menu a {
