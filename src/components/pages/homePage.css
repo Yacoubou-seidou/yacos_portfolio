@@ -9,6 +9,10 @@ h6 {
   font-weight: 600
 }
 
+.homePage {
+  height: 100% !important;
+}
+
 .animated-section {
   background-color: #222;
   height: 100%;
@@ -41,7 +45,7 @@ h6 {
   -webkit-perspective: 1500px;
   -moz-perspective: 1500px;
   perspective: 1500px;
-  height: 100vh;
+  height: 100vh !important;
   overflow-x: hidden;
   overflow-y: auto;
 }
