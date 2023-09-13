@@ -69,27 +69,6 @@ const Portfolio = () => {
         <div className="row">
           <div className="col-xs-12 col-sm-12">
             <div className="portfolio-content">
-
-              <ul className="portfolio-filters">
-                <li className="active">
-                  <a className="filter btn btn-sm btn-link" data-group="category_all">All</a>
-                </li>
-                <li>
-                  <a className="filter btn btn-sm btn-link" data-group="category_detailed">Detailed</a>
-                </li>
-                <li>
-                  <a className="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
-                </li>
-                <li>
-                  <a className="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>
-                </li>
-                <li>
-                  <a className="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Vimeo Videos</a>
-                </li>
-                <li>
-                  <a className="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube Videos</a>
-                </li>
-              </ul>
               <div className="portfolio-grid col-12 three-columns">
                 <ProjectList handleProjectDetail={handleProjectDetail} />
               </div>

@@ -4,15 +4,18 @@ import CloseIcon from '@mui/icons-material/Close';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ProjectGallery from './ProjectGallery';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import PersonIcon from '@mui/icons-material/Person';
 import LanguageIcon from '@mui/icons-material/Language';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TechList from './TechList';
+import { animationsArray } from '../../data/animations';
 const ProjectDetails = ({ removeProjectDetail, projectDetail, nextProject, previewProject }) => {
-  const animationsArray = ['animated-section-moveFromLeft', 'animated-section-moveToRight']
-  const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
+  // const animationsArray = ['animated-section-moveFromLeft', 'animated-section-moveToRight']
+  // const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
+  const [animation, setAnimation] = useState('')
+  // const result = animationsArray[(Math.floor(Math.random() * animationsArray.length))]
   useEffect(() => {
     const element = document.getElementById('theMainHeader');
     const container = document.getElementById('animatedSectionMain');
@@ -24,10 +27,11 @@ const ProjectDetails = ({ removeProjectDetail, projectDetail, nextProject, previ
       container.classList.add('col-12')
       container.classList.add('p-0')
     }
-  }, [])
+    setAnimation(animationsArray[(Math.floor(Math.random() * animationsArray.length))])
+  }, [projectDetail])
   return (
     projectDetail !== null ?
-      <div id="ajax-page" className={`ajax-page-content animated-section p-0 ${result}`}>
+      <div id="ajax-page" className={`ajax-page-content animated-section p-0 ${animation}`}>
         <div className="ajax-page-wrapper">
           <div className="ajax-page-nav">
             <div className="nav-item ajax-page-prev-next">
