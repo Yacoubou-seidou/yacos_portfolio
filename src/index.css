@@ -1,25 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700&family=Oswald:wght@700&family=Poppins:wght@400;700&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
-#root {
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-  position: sticky !important;
-  top: 0 !important;
-  overflow: hidden !important;
-}
-
 html {
   margin: 0;
   width: 100% !important;
   height: 100% !important;
   min-height: 100% !important;
   overflow: hidden !important;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -41,6 +31,17 @@ body {
   background-size: cover;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+}
+
+
+#root {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  position: sticky !important;
+  top: 0 !important;
+  overflow: hidden !important;
 }
 
 h1,
