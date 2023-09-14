@@ -29,11 +29,6 @@ const About = () => {
             <div className="info-list">
               <ul>
                 <li>
-                  <span className="title">Age</span>
-                  <span className="value">30</span>
-                </li>
-
-                <li>
                   <span className="title">Residence</span>
                   <span className="value">Niger</span>
                 </li>
