@@ -183,14 +183,12 @@
 
   .section-content {
     height: 100% !important;
-    /* overflow: hidden !important; */
   }
 
   .header {
     position: absolute;
     width: 100%;
     max-width: 330px;
-    /* height: 100% !important; */
     top: 0;
     right: 0;
     bottom: 0;
@@ -550,11 +548,16 @@
   .about_container {
     gap: 20px !important;
   }
+}
 
-  /* .skill.clearfix h4 {
-    width: 100% !important;
-    text-align: center !important;
-  } */
+@media only screen and (max-width:374px) {
+  .title-block h2 {
+    font-size: 22px !important;
+  }
+
+  .title-block .sp-subtitle {
+    font-size: 14px !important;
+  }
 }
 
 .header {
