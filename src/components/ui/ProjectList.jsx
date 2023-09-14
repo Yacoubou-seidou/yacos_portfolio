@@ -31,7 +31,7 @@ const ProjectList = ({ handleProjectDetail }) => {
           {project.link !== '' ? <Button size="small"><a target='_blank' rel='noreferrer' href={project.link}>
             Visit
           </a> </Button> : <Button size="small" disabled={true} className='category'><span>{project.name === 'Sahelian Dev Website' ? 'Ongoing' : 'Console'}</span></Button>}
-          {project.private ? '' : project.repo ? <Button size="small"><a target='_blank' rel='noreferrer' href={project.repo}>
+          {project.private ? <Button size="small" disabled={true} className='category'><span>Private</span></Button> : project.repo ? <Button size="small"><a target='_blank' rel='noreferrer' href={project.repo}>
             Github
           </a></Button> : ''}
         </CardActions>
