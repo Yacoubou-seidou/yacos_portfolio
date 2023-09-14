@@ -45,7 +45,7 @@ const About = () => {
 
                 <li>
                   <span className="title">Phone</span>
-                  <span className="value">+0123 123 456 789</span>
+                  <span className="value">+227 93 03 95 28</span>
                 </li>
               </ul>
             </div>
