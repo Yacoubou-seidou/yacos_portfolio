@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import NavBar from './navbar/NavBar'
 import Profile from './profile/Profile'
-import './header.css'
 const Header = () => {
   const [currentLocation, setCurrentLocation] = useState(null)
   const [open, setOpen] = useState(false)
