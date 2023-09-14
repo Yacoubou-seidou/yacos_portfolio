@@ -5,7 +5,7 @@ const Profile = () => {
   return (
     <div className="header-content col-9">
       <div className="header-photo">
-        <img src={profileImage} className='profileImage' alt="Yacos" width="100%" />
+        <img src={profileImage} className='profileImage' alt="Yacos" width="180px" />
       </div>
       <div className="header-titles">
         <h2>Yacoubou Seidou</h2>
