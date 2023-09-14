@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+#root {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  position: sticky !important;
+  top: 0 !important;
+  overflow: hidden !important;
+}
+
 html {
   margin: 0;
   width: 100% !important;
