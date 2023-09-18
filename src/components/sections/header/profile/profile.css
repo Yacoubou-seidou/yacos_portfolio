@@ -41,6 +41,7 @@
 
 .header-photo .profileImage {
   width: 100%;
+  height: 100%;
   background-color: #fff;
   border: 3px solid #fff;
   border-radius: 300px

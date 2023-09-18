@@ -5,14 +5,15 @@ import intraProjectdetails from './images/imgs/projectDetailIntra.png'
 import intraProjectPage from './images/imgs/projectPageIntra.png'
 import codeloccol2 from './images/previews/codewebsite.png'
 import country from './images/previews/metrics.png'
-// import pureFav from './images/previews/pureFav.png'
+import bookStore from './images/previews/bookstores.png'
+import pureFav from './images/previews/pureFav.png'
 import kondo from './images/previews/kondo.png'
 import consolehub from './images/previews/consoleNew.png'
-// import sahelBanner from './images/previews/sahelianPre.png'
-// import sahelianAbout from './images/imgs/sahelian2.png'
-// import sahelianService from './images/imgs/sahelian3.png'
-// import sahellianContact from './images/imgs/sahelian4.png'
-// import schoolLib from './images/previews/schoolConsole.png'
+import sahelBanner from './images/previews/sahelianPre.png'
+import sahelianAbout from './images/imgs/sahelian2.png'
+import sahelianService from './images/imgs/sahelian3.png'
+import sahellianContact from './images/imgs/sahelian4.png'
+import schoolLib from './images/previews/schoolConsole.png'
 export const projects = [
   {
     id: 1,
@@ -78,20 +79,20 @@ export const projects = [
     repo: 'https://github.com/Yacoubou-seidou/React-redux-capstone',
     stack: ['HTML', 'CSS', 'React.js', 'JavaScript', 'Redux']
   },
-  // {
-  //   id: 4,
-  //   name: 'Pure Fav',
-  //   category: 'Packages',
-  //   status: 'In Progress',
-  //   description: 'Pure Fav Save and edit links effortlessly with this powerful Chrome extension. Easily capture important webpages, rename them for clarity, and organize your digital resources for future reference.',
-  //   date: '01 April, 2022',
-  //   images: [{ name: 'Chrome view', link: pureFav }],
-  //   link: '',
-  //   preview: pureFav,
-  //   private: false,
-  //   repo: 'https://github.com/Yacoubou-seidou/ChromeEX',
-  //   stack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
-  // },
+  {
+    id: 4,
+    name: 'Pure Fav',
+    category: 'Packages',
+    status: 'In Progress',
+    description: 'Pure Fav Save and edit links effortlessly with this powerful Chrome extension. Easily capture important webpages, rename them for clarity, and organize your digital resources for future reference.',
+    date: '01 April, 2022',
+    images: [{ name: 'Chrome view', link: pureFav }],
+    link: '',
+    preview: pureFav,
+    private: false,
+    repo: 'https://github.com/Yacoubou-seidou/ChromeEX',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
+  },
   {
     id: 5,
     name: 'Kondona',
@@ -120,37 +121,51 @@ export const projects = [
     repo: 'https://github.com/Yacoubou-seidou/gaming_console_reservation_front_end',
     stack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails', 'React.js', 'Redux', 'PostgreSQL']
   },
-  // {
-  //   id: 7,
-  //   name: 'Sahelian Dev Website',
-  //   category: 'Websites',
-  //   status: 'Ongoing',
-  //   description: "Sahelian Dev Website: Empowering Sahelian Startups with Online VisibilityAs a freelance team, we took on the mission of enhancing the online presence and accessibility of Sahelian startups through the creation of the Sahelian Dev Website. This dynamic platform serves as a gateway for users to effortlessly connect with Sahelian Dev's services and engage with them online. The integration of a mailer system streamlines communication, allowing users to easily reach out to Sahelian Dev for inquiries, collaboration opportunities, or support. Behind the scenes, our website boasts a powerful backend that facilitates a feature-rich blog, enabling Sahelian Dev to share valuable insights, updates, and resources with the community.",
-  //   date: '10 April, 2023',
-  //   images: [
-  //     { name: 'Banner', link: sahelBanner },
-  //     { name: 'About', link: sahelianAbout },
-  //     { name: 'Service', link: sahelianService },
-  //     { name: 'Contact', link: sahellianContact }
-  //   ],
-  //   link: '',
-  //   preview: sahelBanner,
-  //   private: true,
-  //   repo: '',
-  //   stack: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux', 'Express.js', 'Bootstrap', 'MongoDB']
-  // },
-  // {
-  //   id: 8,
-  //   name: 'School Library',
-  //   category: 'Consoles app',
-  //   status: 'Done',
-  //   description: "School library In this project,we  build an console app to record what books are in the library and who borrows them. The app allow you to add a new students or teachers, add new books and save records of who borrowed a given book.",
-  //   date: '30 June, 2023',
-  //   images: [{ name: 'Console View', link: schoolLib }],
-  //   link: '',
-  //   preview: schoolLib,
-  //   private: false,
-  //   repo: 'https://github.com/Yacoubou-seidou/School_library',
-  //   stack: ['Ruby', 'PostgreSQL']
-  // },
+  {
+    id: 6,
+    name: 'Bookstore',
+    category: 'Websites',
+    status: 'Done',
+    description: 'Bookstore is a user-friendly website that manages books efficiently. It allows users to add, delete, and categorize books. Users can input book details like title, author. Still in Developement.',
+    date: '24 June, 2023',
+    images: [{ name: 'Home page', link: bookStore }],
+    link: 'https://bookstore-q0nn.onrender.com/',
+    preview: bookStore,
+    private: false,
+    repo: 'https://github.com/Yacoubou-seidou/Bookstore.git',
+    stack: ['HTML', 'CSS', 'JavaScript', 'React.js']
+  },
+  {
+    id: 7,
+    name: 'Sahelian Dev Website',
+    category: 'Websites',
+    status: 'Ongoing',
+    description: "Sahelian Dev Website: Empowering Sahelian Startups with Online VisibilityAs a freelance team, we took on the mission of enhancing the online presence and accessibility of Sahelian startups through the creation of the Sahelian Dev Website. This dynamic platform serves as a gateway for users to effortlessly connect with Sahelian Dev's services and engage with them online. The integration of a mailer system streamlines communication, allowing users to easily reach out to Sahelian Dev for inquiries, collaboration opportunities, or support. Behind the scenes, our website boasts a powerful backend that facilitates a feature-rich blog, enabling Sahelian Dev to share valuable insights, updates, and resources with the community.",
+    date: '10 April, 2023',
+    images: [
+      { name: 'Banner', link: sahelBanner },
+      { name: 'About', link: sahelianAbout },
+      { name: 'Service', link: sahelianService },
+      { name: 'Contact', link: sahellianContact }
+    ],
+    link: '',
+    preview: sahelBanner,
+    private: true,
+    repo: '',
+    stack: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux', 'Express.js', 'Bootstrap', 'MongoDB']
+  },
+  {
+    id: 8,
+    name: 'School Library',
+    category: 'Consoles app',
+    status: 'Done',
+    description: "School library In this project,we  build an console app to record what books are in the library and who borrows them. The app allow you to add a new students or teachers, add new books and save records of who borrowed a given book.",
+    date: '30 June, 2023',
+    images: [{ name: 'Console View', link: schoolLib }],
+    link: '',
+    preview: schoolLib,
+    private: false,
+    repo: 'https://github.com/Yacoubou-seidou/School_library',
+    stack: ['Ruby', 'PostgreSQL']
+  },
 ]
