@@ -1,10 +1,11 @@
-import intraDash from './images/previews/intraDash.png'
-import intraModule from './images/imgs/intraModule.png'
-import intraProject from './images/imgs/projectListNew.png'
-import intraProjectdetails from './images/imgs/projectDetailIntra.png'
-import intraProjectPage from './images/imgs/projectPageIntra.png'
-import codeloccol2 from './images/previews/codewebsite.png'
+// import intraDash from './images/previews/intraDash.png'
+// import intraModule from './images/imgs/intraModule.png'
+// import intraProject from './images/imgs/projectListNew.png'
+// import intraProjectdetails from './images/imgs/projectDetailIntra.png'
+// import intraProjectPage from './images/imgs/projectPageIntra.png'
+// import codeloccol2 from './images/previews/codewebsite.png'
 import country from './images/previews/metrics.png'
+import bookStore from './images/previews/bookstores.png'
 // import pureFav from './images/previews/pureFav.png'
 import kondo from './images/previews/kondo.png'
 import consolehub from './images/previews/consoleNew.png'
@@ -14,56 +15,56 @@ import consolehub from './images/previews/consoleNew.png'
 // import sahellianContact from './images/imgs/sahelian4.png'
 // import schoolLib from './images/previews/schoolConsole.png'
 export const projects = [
-  {
-    id: 1,
-    name: 'Codeloccol Intranet',
-    category: 'Website',
-    status: 'In Progress',
-    description: "Empowering Junior Web Developers and Identifying Future Talent The Codeloccol intranet serves a dual purpose: it's an essential learning platform for junior web developers seeking to enhance their skills and advance in the program, while also functioning as a robust tool for identifying and evaluating prospective talent for Codeloccol.The Codeloccol Intranet is more than an online platform; it's a dynamic ecosystem that empowers talent development and facilitates the discovery of tomorrow's coding stars within the Codeloccol community.",
-    date: '08 January, 2023',
-    images: [
-      {
-        name: 'Dashboard',
-        link: intraDash
-      },
-      {
-        name: 'Modules',
-        link: intraModule
-      },
-      {
-        name: 'Projects',
-        link: intraProject
-      },
-      {
-        name: 'Projet Details',
-        link: intraProjectdetails
-      }
-      ,
-      {
-        name: 'Projet Page',
-        link: intraProjectPage
-      }
-    ],
-    link: 'https://main.d3n2iiglzbx8kh.amplifyapp.com/login',
-    preview: intraDash,
-    private: true,
-    repo: '',
-    stack: ['React.js', 'Node.js', 'JavaScript', 'useContext', 'Redux', 'Express.js', 'MaterialUi', 'MongoDB']
-  },
-  {
-    id: 2,
-    name: 'Codeloccol Website',
-    category: 'Website',
-    status: 'Done',
-    description: 'The website increases Codeloccol visibility and allows the junior web developer to submit their candidature for the program. ',
-    date: '25 October, 2022',
-    images: [{ name: 'Home Page', link: codeloccol2 }],
-    link: 'https://www.codeloccol.org/',
-    preview: codeloccol2,
-    private: true,
-    repo: '',
-    stack: ['HTML', 'CSS', 'React.js', 'Node.js', 'JavaScript', 'TypeScript', 'Express.js', 'MongoDB']
-  },
+  // {
+  //   id: 1,
+  //   name: 'Codeloccol Intranet',
+  //   category: 'Website',
+  //   status: 'In Progress',
+  //   description: "Empowering Junior Web Developers and Identifying Future Talent The Codeloccol intranet serves a dual purpose: it's an essential learning platform for junior web developers seeking to enhance their skills and advance in the program, while also functioning as a robust tool for identifying and evaluating prospective talent for Codeloccol.The Codeloccol Intranet is more than an online platform; it's a dynamic ecosystem that empowers talent development and facilitates the discovery of tomorrow's coding stars within the Codeloccol community.",
+  //   date: '08 January, 2023',
+  //   images: [
+  //     {
+  //       name: 'Dashboard',
+  //       link: intraDash
+  //     },
+  //     {
+  //       name: 'Modules',
+  //       link: intraModule
+  //     },
+  //     {
+  //       name: 'Projects',
+  //       link: intraProject
+  //     },
+  //     {
+  //       name: 'Projet Details',
+  //       link: intraProjectdetails
+  //     }
+  //     ,
+  //     {
+  //       name: 'Projet Page',
+  //       link: intraProjectPage
+  //     }
+  //   ],
+  //   link: 'https://main.d3n2iiglzbx8kh.amplifyapp.com/login',
+  //   preview: intraDash,
+  //   private: true,
+  //   repo: '',
+  //   stack: ['React.js', 'Node.js', 'JavaScript', 'useContext', 'Redux', 'Express.js', 'MaterialUi', 'MongoDB']
+  // },
+  // {
+  //   id: 2,
+  //   name: 'Codeloccol Website',
+  //   category: 'Website',
+  //   status: 'Done',
+  //   description: 'The website increases Codeloccol visibility and allows the junior web developer to submit their candidature for the program. ',
+  //   date: '25 October, 2022',
+  //   images: [{ name: 'Home Page', link: codeloccol2 }],
+  //   link: 'https://www.codeloccol.org/',
+  //   preview: codeloccol2,
+  //   private: true,
+  //   repo: '',
+  //   stack: ['HTML', 'CSS', 'React.js', 'Node.js', 'JavaScript', 'TypeScript', 'Express.js', 'MongoDB']
+  // },
   {
     id: 3,
     name: 'Web Metric',
@@ -119,6 +120,20 @@ export const projects = [
     private: false,
     repo: 'https://github.com/Yacoubou-seidou/gaming_console_reservation_front_end',
     stack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails', 'React.js', 'Redux', 'PostgreSQL']
+  },
+  {
+    id: 6,
+    name: 'Bookstore',
+    category: 'Websites',
+    status: 'Done',
+    description: 'Bookstore is a user-friendly website that manages books efficiently. It allows users to add, delete, and categorize books. Users can input book details like title, author. Still in Developement.',
+    date: '24 June, 2023',
+    images: [{ name: 'Home page', link: bookStore }],
+    link: 'https://bookstore-q0nn.onrender.com/',
+    preview: bookStore,
+    private: false,
+    repo: 'https://github.com/Yacoubou-seidou/Bookstore.git',
+    stack: ['HTML', 'CSS', 'JavaScript', 'React.js']
   },
   // {
   //   id: 7,
